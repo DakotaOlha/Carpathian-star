@@ -1,0 +1,16 @@
+C:\Users\Dakota\source\repos\Carpathian_star\bin\Debug\net8.0-windows\Carpathian_star.exe
+C:\Users\Dakota\source\repos\Carpathian_star\bin\Debug\net8.0-windows\Carpathian_star.deps.json
+C:\Users\Dakota\source\repos\Carpathian_star\bin\Debug\net8.0-windows\Carpathian_star.runtimeconfig.json
+C:\Users\Dakota\source\repos\Carpathian_star\bin\Debug\net8.0-windows\Carpathian_star.dll
+C:\Users\Dakota\source\repos\Carpathian_star\bin\Debug\net8.0-windows\Carpathian_star.pdb
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.Form1.resources
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.csproj.GenerateResource.cache
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.AssemblyInfoInputs.cache
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.AssemblyInfo.cs
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.csproj.CoreCompileInputs.cache
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.dll
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\refint\Carpathian_star.dll
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.pdb
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\Carpathian_star.genruntimeconfig.cache
+C:\Users\Dakota\source\repos\Carpathian_star\obj\Debug\net8.0-windows\ref\Carpathian_star.dll
