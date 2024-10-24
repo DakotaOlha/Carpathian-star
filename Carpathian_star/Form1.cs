@@ -16,15 +16,9 @@ namespace Carpathian_star
         {
             button1.BackColor = Color.GreenYellow;
         }
-
         private void button1_MouseLeave(object sender, EventArgs e)
         {
             button1.BackColor = Color.SeaGreen;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            CenterToScreen();
         }
     }
 }
