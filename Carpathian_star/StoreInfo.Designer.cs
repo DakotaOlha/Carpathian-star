@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StoreInfo));
             label1 = new Label();
             label2 = new Label();
             Owner = new Label();
@@ -37,6 +38,8 @@
             WokHours = new Label();
             label5 = new Label();
             Reputaion = new Label();
+            back_button = new Button();
+            Next_button = new Button();
             SuspendLayout();
             // 
             // label1
@@ -53,7 +56,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(12, 118);
+            label2.Location = new Point(12, 110);
             label2.Name = "label2";
             label2.Size = new Size(159, 51);
             label2.TabIndex = 1;
@@ -63,7 +66,7 @@
             // 
             Owner.AutoSize = true;
             Owner.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Owner.Location = new Point(177, 118);
+            Owner.Location = new Point(177, 110);
             Owner.Name = "Owner";
             Owner.Size = new Size(36, 51);
             Owner.TabIndex = 2;
@@ -73,7 +76,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label3.Location = new Point(12, 211);
+            label3.Location = new Point(12, 203);
             label3.Name = "label3";
             label3.Size = new Size(213, 51);
             label3.TabIndex = 3;
@@ -83,7 +86,7 @@
             // 
             Product.AutoSize = true;
             Product.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Product.Location = new Point(231, 211);
+            Product.Location = new Point(231, 203);
             Product.Name = "Product";
             Product.Size = new Size(36, 51);
             Product.TabIndex = 4;
@@ -93,7 +96,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label4.Location = new Point(12, 295);
+            label4.Location = new Point(12, 287);
             label4.Name = "label4";
             label4.Size = new Size(180, 51);
             label4.TabIndex = 5;
@@ -103,7 +106,7 @@
             // 
             WokHours.AutoSize = true;
             WokHours.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            WokHours.Location = new Point(189, 295);
+            WokHours.Location = new Point(189, 287);
             WokHours.Name = "WokHours";
             WokHours.Size = new Size(36, 51);
             WokHours.TabIndex = 6;
@@ -113,7 +116,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label5.Location = new Point(12, 387);
+            label5.Location = new Point(12, 366);
             label5.Name = "label5";
             label5.Size = new Size(188, 51);
             label5.TabIndex = 7;
@@ -123,17 +126,47 @@
             // 
             Reputaion.AutoSize = true;
             Reputaion.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Reputaion.Location = new Point(206, 387);
+            Reputaion.Location = new Point(206, 368);
             Reputaion.Name = "Reputaion";
             Reputaion.Size = new Size(36, 51);
             Reputaion.TabIndex = 8;
             Reputaion.Text = "-";
+            // 
+            // back_button
+            // 
+            back_button.BackColor = Color.Transparent;
+            back_button.BackgroundImage = (Image)resources.GetObject("back_button.BackgroundImage");
+            back_button.BackgroundImageLayout = ImageLayout.Stretch;
+            back_button.FlatStyle = FlatStyle.Flat;
+            back_button.Font = new Font("Pixeled", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            back_button.ForeColor = SystemColors.ButtonFace;
+            back_button.Location = new Point(12, 441);
+            back_button.Name = "back_button";
+            back_button.Size = new Size(78, 56);
+            back_button.TabIndex = 9;
+            back_button.UseVisualStyleBackColor = false;
+            // 
+            // Next_button
+            // 
+            Next_button.BackColor = Color.Transparent;
+            Next_button.BackgroundImage = (Image)resources.GetObject("Next_button.BackgroundImage");
+            Next_button.BackgroundImageLayout = ImageLayout.Stretch;
+            Next_button.FlatStyle = FlatStyle.Flat;
+            Next_button.Font = new Font("Pixeled", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Next_button.ForeColor = SystemColors.ButtonFace;
+            Next_button.Location = new Point(596, 441);
+            Next_button.Name = "Next_button";
+            Next_button.Size = new Size(79, 56);
+            Next_button.TabIndex = 10;
+            Next_button.UseVisualStyleBackColor = false;
             // 
             // StoreInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(687, 509);
+            Controls.Add(Next_button);
+            Controls.Add(back_button);
             Controls.Add(Reputaion);
             Controls.Add(label5);
             Controls.Add(WokHours);
@@ -161,5 +194,7 @@
         private Label WokHours;
         private Label label5;
         private Label Reputaion;
+        private Button back_button;
+        private Button Next_button;
     }
 }
