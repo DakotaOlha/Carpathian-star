@@ -29,61 +29,61 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnterWindow));
-            button1 = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            button2 = new Button();
+            Start = new Button();
+            Carpathian = new Label();
+            star = new Label();
+            Profile = new Button();
             SuspendLayout();
             // 
-            // button1
+            // Start
             // 
-            button1.AutoEllipsis = true;
-            button1.BackColor = Color.Transparent;
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button1.ForeColor = Color.LightGoldenrodYellow;
-            button1.Location = new Point(729, 497);
-            button1.Name = "button1";
-            button1.Size = new Size(270, 115);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = false;
+            Start.AutoEllipsis = true;
+            Start.BackColor = Color.Transparent;
+            Start.BackgroundImage = (Image)resources.GetObject("Start.BackgroundImage");
+            Start.BackgroundImageLayout = ImageLayout.Stretch;
+            Start.FlatStyle = FlatStyle.Popup;
+            Start.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Start.ForeColor = Color.LightGoldenrodYellow;
+            Start.Location = new Point(729, 497);
+            Start.Name = "Start";
+            Start.Size = new Size(270, 115);
+            Start.TabIndex = 0;
+            Start.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // Carpathian
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Pixeled", 30F);
-            label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(21, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(529, 140);
-            label1.TabIndex = 1;
-            label1.Text = "Carpathian";
+            Carpathian.AutoSize = true;
+            Carpathian.BackColor = Color.Transparent;
+            Carpathian.Font = new Font("Pixeled", 30F);
+            Carpathian.ForeColor = SystemColors.ButtonFace;
+            Carpathian.Location = new Point(21, 21);
+            Carpathian.Name = "Carpathian";
+            Carpathian.Size = new Size(529, 140);
+            Carpathian.TabIndex = 1;
+            Carpathian.Text = "Carpathian";
             // 
-            // label2
+            // star
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Pixeled", 30F);
-            label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(381, 115);
-            label2.Name = "label2";
-            label2.Size = new Size(259, 140);
-            label2.TabIndex = 2;
-            label2.Text = "star";
+            star.AutoSize = true;
+            star.BackColor = Color.Transparent;
+            star.Font = new Font("Pixeled", 30F);
+            star.ForeColor = SystemColors.ButtonFace;
+            star.Location = new Point(381, 115);
+            star.Name = "star";
+            star.Size = new Size(259, 140);
+            star.TabIndex = 2;
+            star.Text = "star";
             // 
-            // button2
+            // Profile
             // 
-            button2.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            button2.Location = new Point(965, 12);
-            button2.Name = "button2";
-            button2.Size = new Size(51, 52);
-            button2.TabIndex = 3;
-            button2.Text = "P";
-            button2.TextAlign = ContentAlignment.TopRight;
-            button2.UseVisualStyleBackColor = true;
+            Profile.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Profile.Location = new Point(965, 12);
+            Profile.Name = "Profile";
+            Profile.Size = new Size(51, 52);
+            Profile.TabIndex = 3;
+            Profile.Text = "P";
+            Profile.TextAlign = ContentAlignment.TopRight;
+            Profile.UseVisualStyleBackColor = true;
             // 
             // EnterWindow
             // 
@@ -92,10 +92,10 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1041, 643);
-            Controls.Add(button2);
-            Controls.Add(label1);
-            Controls.Add(label2);
-            Controls.Add(button1);
+            Controls.Add(Profile);
+            Controls.Add(Carpathian);
+            Controls.Add(star);
+            Controls.Add(Start);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EnterWindow";
             Text = "EnterWindow";
@@ -106,9 +106,9 @@
 
         #endregion
 
-        private Button button1;
-        private Label label1;
-        private Label label2;
-        private Button button2;
+        private Button Start;
+        private Label Carpathian;
+        private Label star;
+        private Button Profile;
     }
 }

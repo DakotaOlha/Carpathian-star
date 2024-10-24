@@ -31,16 +31,16 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            Login_textBox = new TextBox();
+            Password_textBox = new TextBox();
+            Enter = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Pixeled", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.ForeColor = Color.OldLace;
+            label1.ForeColor = Color.OliveDrab;
             label1.Location = new Point(152, -5);
             label1.Name = "label1";
             label1.Size = new Size(287, 95);
@@ -51,7 +51,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.ForeColor = Color.Linen;
+            label2.ForeColor = Color.Olive;
             label2.Location = new Point(225, 101);
             label2.Name = "label2";
             label2.Size = new Size(143, 65);
@@ -62,52 +62,52 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label3.ForeColor = Color.Linen;
+            label3.ForeColor = Color.Olive;
             label3.Location = new Point(207, 252);
             label3.Name = "label3";
             label3.Size = new Size(180, 65);
             label3.TabIndex = 2;
             label3.Text = "Пароль:";
             // 
-            // textBox1
+            // Login_textBox
             // 
-            textBox1.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox1.ForeColor = Color.OliveDrab;
-            textBox1.Location = new Point(152, 172);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(287, 58);
-            textBox1.TabIndex = 3;
+            Login_textBox.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Login_textBox.ForeColor = Color.OliveDrab;
+            Login_textBox.Location = new Point(152, 172);
+            Login_textBox.Name = "Login_textBox";
+            Login_textBox.Size = new Size(287, 58);
+            Login_textBox.TabIndex = 3;
             // 
-            // textBox2
+            // Password_textBox
             // 
-            textBox2.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox2.ForeColor = Color.OliveDrab;
-            textBox2.Location = new Point(152, 324);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(287, 58);
-            textBox2.TabIndex = 4;
+            Password_textBox.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Password_textBox.ForeColor = Color.OliveDrab;
+            Password_textBox.Location = new Point(152, 324);
+            Password_textBox.Name = "Password_textBox";
+            Password_textBox.Size = new Size(287, 58);
+            Password_textBox.TabIndex = 4;
             // 
-            // button1
+            // Enter
             // 
-            button1.BackColor = Color.Linen;
-            button1.Font = new Font("Pixeled", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.OliveDrab;
-            button1.Location = new Point(182, 429);
-            button1.Name = "button1";
-            button1.Size = new Size(214, 88);
-            button1.TabIndex = 5;
-            button1.Text = "Увійти";
-            button1.UseVisualStyleBackColor = false;
+            Enter.BackColor = Color.OliveDrab;
+            Enter.Font = new Font("Pixeled", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Enter.ForeColor = SystemColors.ButtonHighlight;
+            Enter.Location = new Point(182, 429);
+            Enter.Name = "Enter";
+            Enter.Size = new Size(214, 88);
+            Enter.TabIndex = 5;
+            Enter.Text = "Увійти";
+            Enter.UseVisualStyleBackColor = false;
             // 
             // AccForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.OliveDrab;
+            BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(607, 529);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(Enter);
+            Controls.Add(Password_textBox);
+            Controls.Add(Login_textBox);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -123,8 +123,8 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox Login_textBox;
+        private TextBox Password_textBox;
+        private Button Enter;
     }
 }
