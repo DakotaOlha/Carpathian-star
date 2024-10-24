@@ -14,11 +14,11 @@ namespace Carpathian_star
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            button1.BackColor = Color.GreenYellow;
+            Store1.BackColor = Color.GreenYellow;
         }
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackColor = Color.SeaGreen;
+            Store1.BackColor = Color.SeaGreen;
         }
     }
 }
