@@ -12,16 +12,18 @@ namespace Carpathian_star
 {
     public partial class Store1 : Form
     {
-        Form1 baseForm;
-        public Store1(Form1 form)
+        StoreInfo baseForm;
+        public Store1(StoreInfo form)
         {
             InitializeComponent();
             baseForm = form;
+            this.FormClosed += (s, args) => baseForm.form1.Show();
         }
 
         private void Store1_Load(object sender, EventArgs e)
         {
             baseForm.Hide();
+
         }
     }
 }

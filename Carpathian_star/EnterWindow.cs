@@ -12,7 +12,7 @@ namespace Carpathian_star
 {
     public partial class EnterWindow : Form
     {
-        Form1 parentform;
+        public Form1 parentform;
         AccForm childAccForm;
         public EnterWindow(Form1 parent)
         {

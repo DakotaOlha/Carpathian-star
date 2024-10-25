@@ -12,7 +12,7 @@ namespace Carpathian_star
 {
     public partial class StoreInfo : Form
     {
-        Form1 form1;
+        public Form1 form1;
         int numForm = 0;
         public StoreInfo(Form1 form, int i)
         {
@@ -28,10 +28,9 @@ namespace Carpathian_star
             {
                 case 1:
                     {
-                        Store1 store1 = new Store1(form1);
+                        Store1 store1 = new Store1(this);
                         store1.FormClosed += (s, args) => form1.Show();
                         store1.Show();
-                        this.Close();
                         break;
                     }
                 default:
@@ -41,8 +40,8 @@ namespace Carpathian_star
 
         private void back_button_Click(object sender, EventArgs e)
         {
-            form1.Show();
             this.Hide();
+            form1.Show();
         }
     }
 }

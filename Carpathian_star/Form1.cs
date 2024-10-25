@@ -2,6 +2,7 @@ namespace Carpathian_star
 {
     public partial class Form1 : Form
     {
+        public long Balance;
         int count = 0;
         EnterWindow childForm;
 
@@ -10,6 +11,11 @@ namespace Carpathian_star
             InitializeComponent();
             childForm = new EnterWindow(this);
             childForm.FormClosed += (s, args) => this.Show();
+            this.Text = "";
+            this.ShowIcon = false;
+            var screen = Screen.FromControl(this);
+            this.Top = screen.Bounds.Height / 2 - this.Height / 2;
+            this.Left = screen.Bounds.Width / 2 - this.Width / 2;
         }
 
 
@@ -21,11 +27,6 @@ namespace Carpathian_star
                 childForm.ShowDialog();
                 this.Hide();
             }
-            this.Text = "";
-            this.ShowIcon = false;
-            var screen = Screen.FromControl(this);
-            this.Top = screen.Bounds.Height / 2 - this.Height / 2;
-            this.Left = screen.Bounds.Width / 2 - this.Width / 2;
         }
         private void button1_MouseEnter(object sender, EventArgs e)
         {
