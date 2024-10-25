@@ -151,63 +151,70 @@
             // Price1
             // 
             Price1.AutoSize = true;
-            Price1.Location = new Point(109, 211);
+            Price1.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price1.Location = new Point(92, 194);
             Price1.Name = "Price1";
-            Price1.Size = new Size(41, 20);
+            Price1.Size = new Size(84, 42);
             Price1.TabIndex = 18;
             Price1.Text = "Price";
             // 
             // Price2
             // 
             Price2.AutoSize = true;
-            Price2.Location = new Point(370, 211);
+            Price2.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price2.Location = new Point(354, 194);
             Price2.Name = "Price2";
-            Price2.Size = new Size(41, 20);
+            Price2.Size = new Size(84, 42);
             Price2.TabIndex = 19;
             Price2.Text = "Price";
             // 
             // Price3
             // 
             Price3.AutoSize = true;
-            Price3.Location = new Point(621, 211);
+            Price3.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price3.Location = new Point(600, 194);
             Price3.Name = "Price3";
-            Price3.Size = new Size(41, 20);
+            Price3.Size = new Size(84, 42);
             Price3.TabIndex = 20;
             Price3.Text = "Price";
             // 
             // Price4
             // 
             Price4.AutoSize = true;
-            Price4.Location = new Point(855, 211);
+            Price4.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price4.Location = new Point(837, 194);
             Price4.Name = "Price4";
-            Price4.Size = new Size(41, 20);
+            Price4.Size = new Size(84, 42);
             Price4.TabIndex = 21;
             Price4.Text = "Price";
             // 
             // Price5
             // 
             Price5.AutoSize = true;
-            Price5.Location = new Point(235, 423);
+            Price5.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price5.Location = new Point(216, 406);
             Price5.Name = "Price5";
-            Price5.Size = new Size(41, 20);
+            Price5.Size = new Size(84, 42);
             Price5.TabIndex = 22;
             Price5.Text = "Price";
             // 
             // Price6
             // 
             Price6.AutoSize = true;
-            Price6.Location = new Point(501, 423);
+            Price6.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price6.Location = new Point(485, 406);
             Price6.Name = "Price6";
-            Price6.Size = new Size(41, 20);
+            Price6.Size = new Size(84, 42);
             Price6.TabIndex = 23;
             Price6.Text = "Price";
             // 
             // Price7
             // 
             Price7.AutoSize = true;
-            Price7.Location = new Point(738, 423);
+            Price7.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price7.Location = new Point(721, 406);
             Price7.Name = "Price7";
-            Price7.Size = new Size(41, 20);
+            Price7.Size = new Size(84, 42);
             Price7.TabIndex = 24;
             Price7.Text = "Price";
             // 

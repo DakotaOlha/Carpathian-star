@@ -44,7 +44,7 @@
             Start.FlatStyle = FlatStyle.Popup;
             Start.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Start.ForeColor = Color.LightGoldenrodYellow;
-            Start.Location = new Point(729, 497);
+            Start.Location = new Point(710, 497);
             Start.Name = "Start";
             Start.Size = new Size(270, 115);
             Start.TabIndex = 0;
@@ -56,7 +56,7 @@
             Profile.BackgroundImage = (Image)resources.GetObject("Profile.BackgroundImage");
             Profile.BackgroundImageLayout = ImageLayout.Stretch;
             Profile.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Profile.Location = new Point(961, 12);
+            Profile.Location = new Point(925, 12);
             Profile.Name = "Profile";
             Profile.Size = new Size(55, 50);
             Profile.TabIndex = 3;
@@ -80,7 +80,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1041, 643);
+            ClientSize = new Size(1004, 776);
             Controls.Add(pictureBox1);
             Controls.Add(Profile);
             Controls.Add(Start);

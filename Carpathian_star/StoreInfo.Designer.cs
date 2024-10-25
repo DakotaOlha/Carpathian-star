@@ -46,7 +46,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Pixeled", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(75, 18);
+            label1.Location = new Point(75, 15);
             label1.Name = "label1";
             label1.Size = new Size(530, 65);
             label1.TabIndex = 0;
