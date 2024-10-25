@@ -41,14 +41,17 @@
             Start.BackColor = Color.Transparent;
             Start.BackgroundImage = (Image)resources.GetObject("Start.BackgroundImage");
             Start.BackgroundImageLayout = ImageLayout.Stretch;
+            Start.Enabled = false;
             Start.FlatStyle = FlatStyle.Popup;
             Start.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Start.ForeColor = Color.LightGoldenrodYellow;
-            Start.Location = new Point(729, 497);
+            Start.Location = new Point(911, 621);
+            Start.Margin = new Padding(4);
             Start.Name = "Start";
-            Start.Size = new Size(270, 115);
+            Start.Size = new Size(338, 144);
             Start.TabIndex = 0;
             Start.UseVisualStyleBackColor = false;
+            Start.Click += Start_Click;
             // 
             // Carpathian
             // 
@@ -56,9 +59,10 @@
             Carpathian.BackColor = Color.Transparent;
             Carpathian.Font = new Font("Pixeled", 30F);
             Carpathian.ForeColor = SystemColors.ButtonFace;
-            Carpathian.Location = new Point(21, 21);
+            Carpathian.Location = new Point(26, 26);
+            Carpathian.Margin = new Padding(4, 0, 4, 0);
             Carpathian.Name = "Carpathian";
-            Carpathian.Size = new Size(529, 140);
+            Carpathian.Size = new Size(634, 168);
             Carpathian.TabIndex = 1;
             Carpathian.Text = "Carpathian";
             // 
@@ -68,35 +72,39 @@
             star.BackColor = Color.Transparent;
             star.Font = new Font("Pixeled", 30F);
             star.ForeColor = SystemColors.ButtonFace;
-            star.Location = new Point(381, 115);
+            star.Location = new Point(476, 144);
+            star.Margin = new Padding(4, 0, 4, 0);
             star.Name = "star";
-            star.Size = new Size(259, 140);
+            star.Size = new Size(310, 168);
             star.TabIndex = 2;
             star.Text = "star";
             // 
             // Profile
             // 
             Profile.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Profile.Location = new Point(965, 12);
+            Profile.Location = new Point(1206, 15);
+            Profile.Margin = new Padding(4);
             Profile.Name = "Profile";
-            Profile.Size = new Size(51, 52);
+            Profile.Size = new Size(64, 65);
             Profile.TabIndex = 3;
             Profile.Text = "P";
             Profile.TextAlign = ContentAlignment.TopRight;
             Profile.UseVisualStyleBackColor = true;
+            Profile.Click += Profile_Click;
             // 
             // EnterWindow
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1041, 643);
+            ClientSize = new Size(1301, 804);
             Controls.Add(Profile);
             Controls.Add(Carpathian);
             Controls.Add(star);
             Controls.Add(Start);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "EnterWindow";
             Text = "EnterWindow";
             Load += EnterWindow_Load;
@@ -105,10 +113,9 @@
         }
 
         #endregion
-
-        private Button Start;
         private Label Carpathian;
         private Label star;
         private Button Profile;
+        public Button Start;
     }
 }

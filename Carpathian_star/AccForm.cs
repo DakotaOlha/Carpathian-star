@@ -12,9 +12,17 @@ namespace Carpathian_star
 {
     public partial class AccForm : Form
     {
-        public AccForm()
+        EnterWindow enterWindow;
+        public AccForm(EnterWindow form)
         {
             InitializeComponent();
+            enterWindow = form;
+        }
+
+        private void Enter_Click(object sender, EventArgs e)
+        {
+            enterWindow.Start.Enabled = true;
+            this.Close();
         }
     }
 }

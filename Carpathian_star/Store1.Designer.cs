@@ -32,12 +32,14 @@
             // 
             // Store1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1059, 658);
+            ClientSize = new Size(1324, 822);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Store1";
             Text = "Store1";
+            Load += Store1_Load;
             ResumeLayout(false);
         }
 
