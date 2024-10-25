@@ -17,13 +17,12 @@ namespace Carpathian_star
         {
             InitializeComponent();
             baseForm = form;
+            baseForm.Hide();
             this.FormClosed += (s, args) => baseForm.form1.Show();
         }
 
         private void Store1_Load(object sender, EventArgs e)
         {
-            baseForm.Hide();
-
         }
     }
 }

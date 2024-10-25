@@ -27,15 +27,16 @@ namespace Carpathian_star
             CenterToScreen();
         }
 
-        private void Start_Click(object sender, EventArgs e)
+
+        private void Profile_Click_1(object sender, EventArgs e)
+        {
+            childAccForm.ShowDialog();
+        }
+
+        private void Start_Click_1(object sender, EventArgs e)
         {
             parentform.Show();
             this.Close();
-        }
-
-        private void Profile_Click(object sender, EventArgs e)
-        {
-            childAccForm.ShowDialog();
         }
     }
 }

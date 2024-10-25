@@ -19,6 +19,9 @@ namespace Carpathian_star
             InitializeComponent();
             form1 = form;
             numForm = i;
+            var screen = Screen.FromControl(this);
+            this.Top = screen.Bounds.Height / 2 - this.Height / 2;
+            this.Left = screen.Bounds.Width / 2 - this.Width / 2;
         }
 
         private void Next_button_Click(object sender, EventArgs e)

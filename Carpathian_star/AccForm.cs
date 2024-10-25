@@ -48,7 +48,7 @@ namespace Carpathian_star
                 }
                 else
                 {
-                    using (StreamWriter writer = new StreamWriter(filePath))
+                    using (StreamWriter writer = new StreamWriter(filePath, true))
                     {
                         writer.WriteLine(line);
                     }
