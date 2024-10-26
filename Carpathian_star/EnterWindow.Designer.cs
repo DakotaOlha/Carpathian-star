@@ -41,6 +41,7 @@
             Start.BackColor = Color.Transparent;
             Start.BackgroundImage = (Image)resources.GetObject("Start.BackgroundImage");
             Start.BackgroundImageLayout = ImageLayout.Stretch;
+            Start.Enabled = false;
             Start.FlatStyle = FlatStyle.Popup;
             Start.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Start.ForeColor = Color.LightGoldenrodYellow;

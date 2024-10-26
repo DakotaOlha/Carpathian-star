@@ -2,7 +2,7 @@ namespace Carpathian_star
 {
     public partial class Form1 : Form
     {
-        public long Balance;
+        public long Balance = 0;
         int count = 0;
         EnterWindow childForm;
 

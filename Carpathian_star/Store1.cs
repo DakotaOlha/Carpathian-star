@@ -24,5 +24,10 @@ namespace Carpathian_star
         private void Store1_Load(object sender, EventArgs e)
         {
         }
+
+        private void back_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
