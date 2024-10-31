@@ -25,6 +25,7 @@ namespace Carpathian_star
         private void EnterWindow_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            pictureBox1.BorderStyle = BorderStyle.None;
         }
 
 
