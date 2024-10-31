@@ -25,7 +25,7 @@ namespace Carpathian_star
             {
                 string login = Login_textBox.Text,
                     password = Password_textBox.Text,
-                    filePath = @"d:\My files\3 course\Team Development\joint project 1\Carpathian_star\Dani.dot",
+                    filePath = System.IO.Path.Combine(Environment.CurrentDirectory, "Dani.dot"),
                     line = $"{login}, {password}, 500";
                 var matchingLine = File.ReadLines(filePath).FirstOrDefault(line => line.StartsWith($"{login}"));
 
