@@ -1,3 +1,5 @@
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace Carpathian_star
 {
     public partial class Form1 : Form
@@ -16,6 +18,9 @@ namespace Carpathian_star
             var screen = Screen.FromControl(this);
             this.Top = screen.Bounds.Height / 2 - this.Height / 2;
             this.Left = screen.Bounds.Width / 2 - this.Width / 2;
+            Exit.FlatAppearance.BorderSize = 0;
+            Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
 
 
@@ -100,6 +105,11 @@ namespace Carpathian_star
             StoreInfo storeInfo = new StoreInfo(this, 1);
             storeInfo.FormClosed += (s, args) => this.Show();
             storeInfo.ShowDialog();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

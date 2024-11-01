@@ -61,9 +61,10 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(747, 12);
+            pictureBox1.Location = new Point(602, 17);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(58, 54);
+            pictureBox1.Size = new Size(46, 43);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -73,9 +74,10 @@
             textBox1.Enabled = false;
             textBox1.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
             textBox1.ForeColor = Color.Olive;
-            textBox1.Location = new Point(824, 12);
+            textBox1.Location = new Point(659, 10);
+            textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(163, 65);
+            textBox1.Size = new Size(131, 55);
             textBox1.TabIndex = 1;
             // 
             // back_button
@@ -86,144 +88,170 @@
             back_button.FlatStyle = FlatStyle.Flat;
             back_button.Font = new Font("Pixeled", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
             back_button.ForeColor = SystemColors.ButtonFace;
-            back_button.Location = new Point(42, 598);
+            back_button.Location = new Point(11, 538);
+            back_button.Margin = new Padding(2);
             back_button.Name = "back_button";
-            back_button.Size = new Size(78, 56);
+            back_button.Size = new Size(62, 45);
             back_button.TabIndex = 10;
             back_button.UseVisualStyleBackColor = false;
             back_button.Click += back_button_Click;
             // 
             // item1
             // 
-            item1.Location = new Point(74, 104);
+            item1.BackColor = Color.Transparent;
+            item1.Location = new Point(146, 311);
+            item1.Margin = new Padding(2);
             item1.Name = "item1";
-            item1.Size = new Size(124, 104);
+            item1.Size = new Size(55, 82);
             item1.TabIndex = 11;
             item1.TabStop = false;
             // 
             // item2
             // 
-            item2.Location = new Point(332, 104);
+            item2.BackColor = Color.Transparent;
+            item2.Location = new Point(205, 291);
+            item2.Margin = new Padding(2);
             item2.Name = "item2";
-            item2.Size = new Size(124, 104);
+            item2.Size = new Size(48, 102);
             item2.TabIndex = 12;
             item2.TabStop = false;
             // 
             // item3
             // 
-            item3.Location = new Point(579, 104);
+            item3.BackColor = Color.Transparent;
+            item3.Location = new Point(276, 291);
+            item3.Margin = new Padding(2);
             item3.Name = "item3";
-            item3.Size = new Size(124, 104);
+            item3.Size = new Size(105, 102);
             item3.TabIndex = 13;
             item3.TabStop = false;
             // 
             // item4
             // 
-            item4.Location = new Point(814, 104);
+            item4.BackColor = Color.Transparent;
+            item4.Location = new Point(403, 310);
+            item4.Margin = new Padding(2);
             item4.Name = "item4";
-            item4.Size = new Size(124, 104);
+            item4.Size = new Size(34, 83);
             item4.TabIndex = 14;
             item4.TabStop = false;
             // 
             // item5
             // 
-            item5.Location = new Point(196, 316);
+            item5.BackColor = Color.Transparent;
+            item5.Location = new Point(461, 310);
+            item5.Margin = new Padding(2);
             item5.Name = "item5";
-            item5.Size = new Size(124, 104);
+            item5.Size = new Size(38, 83);
             item5.TabIndex = 15;
             item5.TabStop = false;
             // 
             // item6
             // 
-            item6.Location = new Point(465, 316);
+            item6.BackColor = Color.Transparent;
+            item6.Location = new Point(521, 309);
+            item6.Margin = new Padding(2);
             item6.Name = "item6";
-            item6.Size = new Size(124, 104);
+            item6.Size = new Size(49, 84);
             item6.TabIndex = 16;
             item6.TabStop = false;
             // 
             // item7
             // 
-            item7.Location = new Point(699, 316);
+            item7.BackColor = Color.Transparent;
+            item7.Location = new Point(587, 309);
+            item7.Margin = new Padding(2);
             item7.Name = "item7";
-            item7.Size = new Size(124, 104);
+            item7.Size = new Size(46, 83);
             item7.TabIndex = 17;
             item7.TabStop = false;
             // 
             // Price1
             // 
             Price1.AutoSize = true;
-            Price1.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price1.Location = new Point(92, 194);
+            Price1.BackColor = Color.WhiteSmoke;
+            Price1.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price1.ForeColor = Color.Black;
+            Price1.Location = new Point(145, 375);
+            Price1.Margin = new Padding(2, 0, 2, 0);
             Price1.Name = "Price1";
-            Price1.Size = new Size(101, 51);
+            Price1.Size = new Size(56, 28);
             Price1.TabIndex = 18;
             Price1.Text = "Price";
             // 
             // Price2
             // 
             Price2.AutoSize = true;
-            Price2.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price2.Location = new Point(354, 194);
+            Price2.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price2.Location = new Point(203, 375);
+            Price2.Margin = new Padding(2, 0, 2, 0);
             Price2.Name = "Price2";
-            Price2.Size = new Size(101, 51);
+            Price2.Size = new Size(56, 28);
             Price2.TabIndex = 19;
             Price2.Text = "Price";
             // 
             // Price3
             // 
             Price3.AutoSize = true;
-            Price3.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price3.Location = new Point(600, 194);
+            Price3.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price3.Location = new Point(299, 375);
+            Price3.Margin = new Padding(2, 0, 2, 0);
             Price3.Name = "Price3";
-            Price3.Size = new Size(101, 51);
+            Price3.Size = new Size(56, 28);
             Price3.TabIndex = 20;
             Price3.Text = "Price";
             // 
             // Price4
             // 
             Price4.AutoSize = true;
-            Price4.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price4.Location = new Point(837, 194);
+            Price4.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price4.Location = new Point(392, 375);
+            Price4.Margin = new Padding(2, 0, 2, 0);
             Price4.Name = "Price4";
-            Price4.Size = new Size(101, 51);
+            Price4.Size = new Size(56, 28);
             Price4.TabIndex = 21;
             Price4.Text = "Price";
             // 
             // Price5
             // 
             Price5.AutoSize = true;
-            Price5.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price5.Location = new Point(216, 406);
+            Price5.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price5.Location = new Point(452, 375);
+            Price5.Margin = new Padding(2, 0, 2, 0);
             Price5.Name = "Price5";
-            Price5.Size = new Size(101, 51);
+            Price5.Size = new Size(56, 28);
             Price5.TabIndex = 22;
             Price5.Text = "Price";
             // 
             // Price6
             // 
             Price6.AutoSize = true;
-            Price6.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price6.Location = new Point(485, 406);
+            Price6.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price6.Location = new Point(517, 375);
+            Price6.Margin = new Padding(2, 0, 2, 0);
             Price6.Name = "Price6";
-            Price6.Size = new Size(101, 51);
+            Price6.Size = new Size(56, 28);
             Price6.TabIndex = 23;
             Price6.Text = "Price";
             // 
             // Price7
             // 
             Price7.AutoSize = true;
-            Price7.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price7.Location = new Point(721, 406);
+            Price7.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Price7.Location = new Point(580, 375);
+            Price7.Margin = new Padding(2, 0, 2, 0);
             Price7.Name = "Price7";
-            Price7.Size = new Size(101, 51);
+            Price7.Size = new Size(56, 28);
             Price7.TabIndex = 24;
             Price7.Text = "Price";
             // 
             // Store1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1059, 678);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(807, 594);
             Controls.Add(Price7);
             Controls.Add(Price6);
             Controls.Add(Price5);
@@ -242,7 +270,6 @@
             Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "Store1";
             Text = "Store1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

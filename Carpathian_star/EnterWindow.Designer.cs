@@ -32,6 +32,7 @@
             Start = new Button();
             Profile = new Button();
             pictureBox1 = new PictureBox();
+            Exit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -45,24 +46,23 @@
             Start.FlatStyle = FlatStyle.Popup;
             Start.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Start.ForeColor = Color.LightGoldenrodYellow;
-            Start.Location = new Point(888, 621);
-            Start.Margin = new Padding(4);
+            Start.Location = new Point(695, 614);
             Start.Name = "Start";
-            Start.Size = new Size(338, 144);
+            Start.Size = new Size(270, 115);
             Start.TabIndex = 0;
             Start.UseVisualStyleBackColor = false;
             Start.Click += Start_Click_1;
             // 
             // Profile
             // 
-            Profile.BackColor = Color.OliveDrab;
+            Profile.BackColor = Color.DarkOliveGreen;
             Profile.BackgroundImage = (Image)resources.GetObject("Profile.BackgroundImage");
             Profile.BackgroundImageLayout = ImageLayout.Stretch;
+            Profile.FlatStyle = FlatStyle.Flat;
             Profile.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Profile.Location = new Point(1156, 15);
-            Profile.Margin = new Padding(4);
+            Profile.Location = new Point(897, 24);
             Profile.Name = "Profile";
-            Profile.Size = new Size(69, 62);
+            Profile.Size = new Size(50, 42);
             Profile.TabIndex = 3;
             Profile.TextAlign = ContentAlignment.TopRight;
             Profile.UseVisualStyleBackColor = false;
@@ -72,26 +72,40 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(41, 46);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(29, 110);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(926, 314);
+            pictureBox1.Size = new Size(741, 251);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // Exit
+            // 
+            Exit.BackColor = Color.Transparent;
+            Exit.BackgroundImage = (Image)resources.GetObject("Exit.BackgroundImage");
+            Exit.BackgroundImageLayout = ImageLayout.Stretch;
+            Exit.FlatStyle = FlatStyle.Flat;
+            Exit.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Exit.Location = new Point(965, 1);
+            Exit.Name = "Exit";
+            Exit.Size = new Size(35, 33);
+            Exit.TabIndex = 5;
+            Exit.TextAlign = ContentAlignment.TopRight;
+            Exit.UseVisualStyleBackColor = false;
+            Exit.Click += Exit_Click;
+            // 
             // EnterWindow
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1255, 970);
+            ClientSize = new Size(1004, 776);
+            Controls.Add(Exit);
             Controls.Add(pictureBox1);
             Controls.Add(Profile);
             Controls.Add(Start);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "EnterWindow";
             Text = "EnterWindow";
             Load += EnterWindow_Load;
@@ -103,5 +117,6 @@
         private Button Profile;
         private PictureBox pictureBox1;
         public Button Start;
+        private Button Exit;
     }
 }

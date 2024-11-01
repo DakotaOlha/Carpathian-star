@@ -17,6 +17,10 @@ namespace Carpathian_star
         {
             InitializeComponent();
             enterWindow = form;
+            Exit.FlatAppearance.BorderSize = 0;
+            Exit.FlatAppearance.BorderColor = Color.White;
+            Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            Exit.FlatAppearance.MouseOverBackColor = Color.Transparent; 
         }
 
         private void Enter_Click(object sender, EventArgs e)
@@ -25,7 +29,7 @@ namespace Carpathian_star
             {
                 string login = Login_textBox.Text,
                     password = Password_textBox.Text,
-                    filePath = @"d:\My files\3 course\Team Development\joint project 1\Carpathian_star\Dani.dot",
+                    filePath = @"C:\StarOfKarpaty\Carpathian-star\Carpathian_star\Dani.dot",
                     line = $"{login}, {password}, 500";
                 var matchingLine = File.ReadLines(filePath).FirstOrDefault(line => line.StartsWith($"{login}"));
 
@@ -53,7 +57,7 @@ namespace Carpathian_star
                         writer.WriteLine(line);
                     }
                     enterWindow.parentform.Balance = 500;
-                    
+
                     MessageBox.Show("Ви зареєструвалися успішно.");
                     Login_textBox.Clear();
                     Password_textBox.Clear();
@@ -64,6 +68,11 @@ namespace Carpathian_star
             }
             else
                 MessageBox.Show("Введіть логін та пароль.");
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
