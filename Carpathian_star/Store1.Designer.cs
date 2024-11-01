@@ -95,11 +95,13 @@
             // 
             // item1
             // 
+            item1.Image = Properties.Resources.Знімок_екрана_2024_10_03_121027;
             item1.Location = new Point(74, 104);
             item1.Name = "item1";
             item1.Size = new Size(124, 104);
             item1.TabIndex = 11;
             item1.TabStop = false;
+            item1.MouseClick += item1_MouseClick;
             // 
             // item2
             // 
@@ -155,9 +157,9 @@
             Price1.Font = new Font("Pixeled", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Price1.Location = new Point(92, 194);
             Price1.Name = "Price1";
-            Price1.Size = new Size(101, 51);
+            Price1.Size = new Size(58, 51);
             Price1.TabIndex = 18;
-            Price1.Text = "Price";
+            Price1.Text = "30";
             // 
             // Price2
             // 

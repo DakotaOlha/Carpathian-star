@@ -3,6 +3,7 @@ namespace Carpathian_star
     public partial class Form1 : Form
     {
         public long Balance = 0;
+        public string login, password;
         int count = 0;
         EnterWindow childForm;
 

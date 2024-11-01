@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -31,9 +32,11 @@ namespace Carpathian_star
 
                 if (matchingLine != null)
                 {
-                    var parts = matchingLine.Split(',').Select(part => part.Trim()).ToArray();
+                    var parts = Regex.Split(matchingLine, @"\s* \s*");
                     if (parts[1] == password)
                     {
+                        enterWindow.parentform.login = parts[0];
+                        enterWindow.parentform.password = parts[1];
                         enterWindow.parentform.Balance = int.Parse(parts[2]);
                         MessageBox.Show("Ви увійшли успішно.");
                         Login_textBox.Clear();
@@ -53,7 +56,8 @@ namespace Carpathian_star
                         writer.WriteLine(line);
                     }
                     enterWindow.parentform.Balance = 500;
-                    
+                    enterWindow.parentform.login = Login_textBox.Text;
+                    enterWindow.parentform.password = Password_textBox.Text;
                     MessageBox.Show("Ви зареєструвалися успішно.");
                     Login_textBox.Clear();
                     Password_textBox.Clear();
