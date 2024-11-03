@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Store4));
-            Balance = new Label();
+            BalanceLabel = new Label();
             pictureBox1 = new PictureBox();
             back_button = new Button();
             Price2 = new Label();
@@ -50,19 +50,19 @@
             ((System.ComponentModel.ISupportInitialize)Item5).BeginInit();
             SuspendLayout();
             // 
-            // Balance
+            // BalanceLabel
             // 
-            Balance.AutoSize = true;
-            Balance.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Balance.ForeColor = Color.LightYellow;
-            Balance.Image = (Image)resources.GetObject("Balance.Image");
-            Balance.Location = new Point(816, 21);
-            Balance.Margin = new Padding(4, 0, 4, 0);
-            Balance.Name = "Balance";
-            Balance.Size = new Size(164, 45);
-            Balance.TabIndex = 47;
-            Balance.Text = "_________";
-            Balance.TextAlign = ContentAlignment.MiddleCenter;
+            BalanceLabel.AutoSize = true;
+            BalanceLabel.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            BalanceLabel.ForeColor = Color.LightYellow;
+            BalanceLabel.Image = (Image)resources.GetObject("BalanceLabel.Image");
+            BalanceLabel.Location = new Point(816, 21);
+            BalanceLabel.Margin = new Padding(4, 0, 4, 0);
+            BalanceLabel.Name = "BalanceLabel";
+            BalanceLabel.Size = new Size(164, 45);
+            BalanceLabel.TabIndex = 47;
+            BalanceLabel.Text = "_________";
+            BalanceLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -218,7 +218,7 @@
             Controls.Add(Item2);
             Controls.Add(Item1);
             Controls.Add(back_button);
-            Controls.Add(Balance);
+            Controls.Add(BalanceLabel);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 4, 4, 4);
@@ -247,6 +247,6 @@
         private Label Price4;
         private PictureBox Item5;
         private Label Price5;
-        public Label Balance;
+        public Label BalanceLabel;
     }
 }

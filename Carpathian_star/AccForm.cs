@@ -33,11 +33,11 @@ namespace Carpathian_star
                     password = Password_textBox.Text,
                     filePath = System.IO.Path.Combine(Environment.CurrentDirectory, "Dani.dot"),
                     line = $"{login}, {password}, 500";
-                var matchingLine = File.ReadLines(filePath).FirstOrDefault(line => line.StartsWith($"{login}"));
+                var matchingLine = File.ReadLines(filePath).FirstOrDefault(line => line.StartsWith($"{login},"));
 
                 if (matchingLine != null)
                 {
-                    var parts = Regex.Split(matchingLine, @"\s* \s*");
+                    var parts = Regex.Split(matchingLine, @"\s*, \s*");
                     if (parts[1] == password)
                     {
                         enterWindow.parentform.login = parts[0];
