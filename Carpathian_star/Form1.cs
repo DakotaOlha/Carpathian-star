@@ -5,6 +5,7 @@ namespace Carpathian_star
     public partial class Form1 : Form
     {
         public long Balance = 0;
+        public string login, password;
         int count = 0;
         EnterWindow childForm;
 
@@ -36,7 +37,7 @@ namespace Carpathian_star
         }
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            Store1.BackColor = Color.GreenYellow;
+            Store1.BackColor = Color.Red;
         }
         private void button1_MouseLeave(object sender, EventArgs e)
         {
@@ -69,7 +70,7 @@ namespace Carpathian_star
         }
         private void Store7_MouseEnter(object sender, EventArgs e)
         {
-            Store7.BackColor = Color.GreenYellow;
+            Store7.BackColor = Color.Red;
         }
         private void Store7_MouseLeave(object sender, EventArgs e)
         {
@@ -103,14 +104,53 @@ namespace Carpathian_star
 
         private void Store1_Click(object sender, EventArgs e)
         {
+        }
+
+        public void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Store4_Click(object sender, EventArgs e)
+        {
             StoreInfo storeInfo = new StoreInfo(this, 1);
             storeInfo.FormClosed += (s, args) => this.Show();
             storeInfo.ShowDialog();
         }
 
-        private void Exit_Click(object sender, EventArgs e)
+        private void Store8_Click(object sender, EventArgs e)
         {
-            this.Close();
+            StoreInfo storeInfo = new StoreInfo(this, 2);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store5_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 3);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store2_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 4);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store3_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 5);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store6_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 6);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
         }
     }
 }

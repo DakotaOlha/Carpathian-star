@@ -51,7 +51,7 @@
             Price9 = new Label();
             Item10 = new PictureBox();
             Price10 = new Label();
-            Balance = new Label();
+            BalanceLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Item7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Item6).BeginInit();
@@ -70,10 +70,10 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(602, 14);
+            pictureBox1.Location = new Point(752, 18);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(46, 43);
+            pictureBox1.Size = new Size(58, 54);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -86,10 +86,10 @@
             back_button.FlatStyle = FlatStyle.Flat;
             back_button.Font = new Font("Pixeled", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
             back_button.ForeColor = SystemColors.ButtonFace;
-            back_button.Location = new Point(11, 538);
+            back_button.Location = new Point(14, 672);
             back_button.Margin = new Padding(2);
             back_button.Name = "back_button";
-            back_button.Size = new Size(62, 45);
+            back_button.Size = new Size(78, 56);
             back_button.TabIndex = 11;
             back_button.UseVisualStyleBackColor = false;
             // 
@@ -97,10 +97,10 @@
             // 
             Price7.AutoSize = true;
             Price7.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price7.Location = new Point(183, 474);
+            Price7.Location = new Point(229, 592);
             Price7.Margin = new Padding(2, 0, 2, 0);
             Price7.Name = "Price7";
-            Price7.Size = new Size(56, 28);
+            Price7.Size = new Size(68, 33);
             Price7.TabIndex = 38;
             Price7.Text = "Price";
             // 
@@ -108,10 +108,10 @@
             // 
             Price6.AutoSize = true;
             Price6.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price6.Location = new Point(78, 474);
+            Price6.Location = new Point(98, 592);
             Price6.Margin = new Padding(2, 0, 2, 0);
             Price6.Name = "Price6";
-            Price6.Size = new Size(56, 28);
+            Price6.Size = new Size(68, 33);
             Price6.TabIndex = 37;
             Price6.Text = "Price";
             // 
@@ -122,7 +122,7 @@
             Price5.Location = new Point(633, 329);
             Price5.Margin = new Padding(2, 0, 2, 0);
             Price5.Name = "Price5";
-            Price5.Size = new Size(56, 28);
+            Price5.Size = new Size(68, 33);
             Price5.TabIndex = 36;
             Price5.Text = "Price";
             // 
@@ -133,7 +133,7 @@
             Price4.Location = new Point(489, 329);
             Price4.Margin = new Padding(2, 0, 2, 0);
             Price4.Name = "Price4";
-            Price4.Size = new Size(56, 28);
+            Price4.Size = new Size(68, 33);
             Price4.TabIndex = 35;
             Price4.Text = "Price";
             // 
@@ -141,10 +141,10 @@
             // 
             Price3.AutoSize = true;
             Price3.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price3.Location = new Point(293, 329);
+            Price3.Location = new Point(366, 411);
             Price3.Margin = new Padding(2, 0, 2, 0);
             Price3.Name = "Price3";
-            Price3.Size = new Size(56, 28);
+            Price3.Size = new Size(68, 33);
             Price3.TabIndex = 34;
             Price3.Text = "Price";
             // 
@@ -152,10 +152,10 @@
             // 
             Price2.AutoSize = true;
             Price2.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price2.Location = new Point(78, 329);
+            Price2.Location = new Point(98, 411);
             Price2.Margin = new Padding(2, 0, 2, 0);
             Price2.Name = "Price2";
-            Price2.Size = new Size(56, 28);
+            Price2.Size = new Size(68, 33);
             Price2.TabIndex = 33;
             Price2.Text = "Price";
             // 
@@ -165,20 +165,20 @@
             Price1.BackColor = Color.WhiteSmoke;
             Price1.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Price1.ForeColor = Color.Black;
-            Price1.Location = new Point(78, 188);
+            Price1.Location = new Point(98, 235);
             Price1.Margin = new Padding(2, 0, 2, 0);
             Price1.Name = "Price1";
-            Price1.Size = new Size(56, 28);
+            Price1.Size = new Size(68, 33);
             Price1.TabIndex = 32;
             Price1.Text = "Price";
             // 
             // Item7
             // 
             Item7.BackColor = Color.Transparent;
-            Item7.Location = new Point(179, 382);
+            Item7.Location = new Point(224, 478);
             Item7.Margin = new Padding(2);
             Item7.Name = "Item7";
-            Item7.Size = new Size(68, 109);
+            Item7.Size = new Size(85, 136);
             Item7.TabIndex = 31;
             Item7.TabStop = false;
             // 
@@ -198,7 +198,7 @@
             Item5.Location = new Point(626, 260);
             Item5.Margin = new Padding(2);
             Item5.Name = "Item5";
-            Item5.Size = new Size(70, 83);
+            Item5.Size = new Size(88, 104);
             Item5.TabIndex = 29;
             Item5.TabStop = false;
             // 
@@ -256,10 +256,10 @@
             // 
             Price8.AutoSize = true;
             Price8.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price8.Location = new Point(293, 474);
+            Price8.Location = new Point(366, 592);
             Price8.Margin = new Padding(2, 0, 2, 0);
             Price8.Name = "Price8";
-            Price8.Size = new Size(56, 28);
+            Price8.Size = new Size(68, 33);
             Price8.TabIndex = 40;
             Price8.Text = "Price";
             // 
@@ -280,7 +280,7 @@
             Price9.Location = new Point(489, 474);
             Price9.Margin = new Padding(2, 0, 2, 0);
             Price9.Name = "Price9";
-            Price9.Size = new Size(56, 28);
+            Price9.Size = new Size(68, 33);
             Price9.TabIndex = 42;
             Price9.Text = "Price";
             // 
@@ -301,31 +301,32 @@
             Price10.Location = new Point(669, 474);
             Price10.Margin = new Padding(2, 0, 2, 0);
             Price10.Name = "Price10";
-            Price10.Size = new Size(56, 28);
+            Price10.Size = new Size(68, 33);
             Price10.TabIndex = 44;
             Price10.Text = "Price";
             // 
-            // Balance
+            // BalanceLabel
             // 
-            Balance.AutoSize = true;
-            Balance.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Balance.ForeColor = Color.LightYellow;
-            Balance.Image = (Image)resources.GetObject("Balance.Image");
-            Balance.Location = new Point(653, 17);
-            Balance.Name = "Balance";
-            Balance.Size = new Size(134, 37);
-            Balance.TabIndex = 45;
-            Balance.Text = "_________";
-            Balance.TextAlign = ContentAlignment.MiddleCenter;
+            BalanceLabel.AutoSize = true;
+            BalanceLabel.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            BalanceLabel.ForeColor = Color.LightYellow;
+            BalanceLabel.Image = (Image)resources.GetObject("BalanceLabel.Image");
+            BalanceLabel.Location = new Point(816, 21);
+            BalanceLabel.Margin = new Padding(4, 0, 4, 0);
+            BalanceLabel.Name = "BalanceLabel";
+            BalanceLabel.Size = new Size(164, 45);
+            BalanceLabel.TabIndex = 45;
+            BalanceLabel.Text = "_________";
+            BalanceLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Store3
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(807, 594);
-            Controls.Add(Balance);
+            Controls.Add(BalanceLabel);
             Controls.Add(Price10);
             Controls.Add(Item10);
             Controls.Add(Price9);
@@ -350,6 +351,7 @@
             Controls.Add(pictureBox1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Store3";
             Text = "Store3";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -390,6 +392,6 @@
         private Label Price9;
         private PictureBox Item10;
         private Label Price10;
-        private Label Balance;
+        public Label BalanceLabel;
     }
 }

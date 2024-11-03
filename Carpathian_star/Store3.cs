@@ -12,9 +12,14 @@ namespace Carpathian_star
 {
     public partial class Store3 : Form
     {
-        public Store3()
+        StoreInfo baseForm;
+        public Store3(StoreInfo form)
         {
             InitializeComponent();
+            baseForm = form;
+            baseForm.Hide();
+            this.FormClosed += (s, args) => baseForm.form1.Show();
+            this.ShowIcon = false;
             this.CenterToScreen();
         }
     }

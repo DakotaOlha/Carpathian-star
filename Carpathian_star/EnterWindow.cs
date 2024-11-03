@@ -31,6 +31,7 @@ namespace Carpathian_star
         private void EnterWindow_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            pictureBox1.BorderStyle = BorderStyle.None;
         }
 
 
@@ -47,7 +48,7 @@ namespace Carpathian_star
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            parentform.Exit_Click(sender, e);
         }
     }
 }

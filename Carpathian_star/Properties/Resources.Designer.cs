@@ -59,5 +59,15 @@ namespace Carpathian_star.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Знімок_екрана_2024_10_03_121027 {
+            get {
+                object obj = ResourceManager.GetObject("Знімок екрана 2024-10-03 121027", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
