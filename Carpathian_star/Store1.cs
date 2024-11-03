@@ -99,5 +99,10 @@ namespace Carpathian_star
         {
             CorectBalanse(Price7);
         }
+
+        private void Store1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

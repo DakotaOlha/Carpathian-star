@@ -92,17 +92,18 @@
             back_button.Size = new Size(62, 45);
             back_button.TabIndex = 11;
             back_button.UseVisualStyleBackColor = false;
+            back_button.Click += back_button_Click;
             // 
             // Price7
             // 
             Price7.AutoSize = true;
             Price7.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price7.Location = new Point(189, 474);
+            Price7.Location = new Point(202, 474);
             Price7.Margin = new Padding(2, 0, 2, 0);
             Price7.Name = "Price7";
-            Price7.Size = new Size(56, 28);
+            Price7.Size = new Size(32, 28);
             Price7.TabIndex = 38;
-            Price7.Text = "Price";
+            Price7.Text = "35";
             // 
             // Price6
             // 
@@ -111,9 +112,9 @@
             Price6.Location = new Point(78, 474);
             Price6.Margin = new Padding(2, 0, 2, 0);
             Price6.Name = "Price6";
-            Price6.Size = new Size(56, 28);
+            Price6.Size = new Size(32, 28);
             Price6.TabIndex = 37;
-            Price6.Text = "Price";
+            Price6.Text = "50";
             // 
             // Price5
             // 
@@ -122,9 +123,9 @@
             Price5.Location = new Point(633, 329);
             Price5.Margin = new Padding(2, 0, 2, 0);
             Price5.Name = "Price5";
-            Price5.Size = new Size(56, 28);
+            Price5.Size = new Size(32, 28);
             Price5.TabIndex = 36;
-            Price5.Text = "Price";
+            Price5.Text = "30";
             // 
             // Price4
             // 
@@ -133,9 +134,9 @@
             Price4.Location = new Point(492, 329);
             Price4.Margin = new Padding(2, 0, 2, 0);
             Price4.Name = "Price4";
-            Price4.Size = new Size(56, 28);
+            Price4.Size = new Size(32, 28);
             Price4.TabIndex = 35;
-            Price4.Text = "Price";
+            Price4.Text = "70";
             // 
             // Price3
             // 
@@ -144,9 +145,9 @@
             Price3.Location = new Point(293, 329);
             Price3.Margin = new Padding(2, 0, 2, 0);
             Price3.Name = "Price3";
-            Price3.Size = new Size(56, 28);
+            Price3.Size = new Size(32, 28);
             Price3.TabIndex = 34;
-            Price3.Text = "Price";
+            Price3.Text = "30";
             // 
             // Price2
             // 
@@ -155,9 +156,9 @@
             Price2.Location = new Point(78, 329);
             Price2.Margin = new Padding(2, 0, 2, 0);
             Price2.Name = "Price2";
-            Price2.Size = new Size(56, 28);
+            Price2.Size = new Size(32, 28);
             Price2.TabIndex = 33;
-            Price2.Text = "Price";
+            Price2.Text = "60";
             // 
             // Price1
             // 
@@ -165,12 +166,12 @@
             Price1.BackColor = Color.WhiteSmoke;
             Price1.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Price1.ForeColor = Color.Black;
-            Price1.Location = new Point(78, 188);
+            Price1.Location = new Point(89, 184);
             Price1.Margin = new Padding(2, 0, 2, 0);
             Price1.Name = "Price1";
-            Price1.Size = new Size(56, 28);
+            Price1.Size = new Size(32, 28);
             Price1.TabIndex = 32;
-            Price1.Text = "Price";
+            Price1.Text = "45";
             // 
             // Item7
             // 
@@ -181,6 +182,7 @@
             Item7.Size = new Size(73, 105);
             Item7.TabIndex = 31;
             Item7.TabStop = false;
+            Item7.Click += Item7_Click;
             // 
             // Item6
             // 
@@ -191,6 +193,7 @@
             Item6.Size = new Size(144, 109);
             Item6.TabIndex = 30;
             Item6.TabStop = false;
+            Item6.Click += Item6_Click;
             // 
             // Item5
             // 
@@ -201,6 +204,7 @@
             Item5.Size = new Size(70, 83);
             Item5.TabIndex = 29;
             Item5.TabStop = false;
+            Item5.Click += Item5_Click;
             // 
             // Item4
             // 
@@ -211,6 +215,7 @@
             Item4.Size = new Size(219, 90);
             Item4.TabIndex = 28;
             Item4.TabStop = false;
+            Item4.Click += Item4_Click;
             // 
             // Item3
             // 
@@ -221,6 +226,7 @@
             Item3.Size = new Size(138, 78);
             Item3.TabIndex = 27;
             Item3.TabStop = false;
+            Item3.Click += Item3_Click;
             // 
             // Item2
             // 
@@ -231,6 +237,7 @@
             Item2.Size = new Size(148, 72);
             Item2.TabIndex = 26;
             Item2.TabStop = false;
+            Item2.Click += Item2_Click;
             // 
             // Item1
             // 
@@ -241,6 +248,7 @@
             Item1.Size = new Size(148, 108);
             Item1.TabIndex = 25;
             Item1.TabStop = false;
+            Item1.Click += Item1_Click;
             // 
             // Item8
             // 
@@ -251,17 +259,18 @@
             Item8.Size = new Size(138, 105);
             Item8.TabIndex = 39;
             Item8.TabStop = false;
+            Item8.Click += Item8_Click;
             // 
             // Price8
             // 
             Price8.AutoSize = true;
             Price8.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price8.Location = new Point(293, 474);
+            Price8.Location = new Point(312, 474);
             Price8.Margin = new Padding(2, 0, 2, 0);
             Price8.Name = "Price8";
-            Price8.Size = new Size(56, 28);
+            Price8.Size = new Size(32, 28);
             Price8.TabIndex = 40;
-            Price8.Text = "Price";
+            Price8.Text = "60";
             // 
             // Item9
             // 
@@ -272,17 +281,18 @@
             Item9.Size = new Size(221, 105);
             Item9.TabIndex = 41;
             Item9.TabStop = false;
+            Item9.Click += Item9_Click;
             // 
             // Price9
             // 
             Price9.AutoSize = true;
             Price9.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price9.Location = new Point(483, 474);
+            Price9.Location = new Point(492, 474);
             Price9.Margin = new Padding(2, 0, 2, 0);
             Price9.Name = "Price9";
-            Price9.Size = new Size(56, 28);
+            Price9.Size = new Size(32, 28);
             Price9.TabIndex = 42;
-            Price9.Text = "Price";
+            Price9.Text = "90";
             // 
             // Item10
             // 
@@ -293,6 +303,7 @@
             Item10.Size = new Size(148, 94);
             Item10.TabIndex = 43;
             Item10.TabStop = false;
+            Item10.Click += Item10_Click;
             // 
             // Price10
             // 
@@ -301,9 +312,9 @@
             Price10.Location = new Point(662, 474);
             Price10.Margin = new Padding(2, 0, 2, 0);
             Price10.Name = "Price10";
-            Price10.Size = new Size(56, 28);
+            Price10.Size = new Size(32, 28);
             Price10.TabIndex = 44;
-            Price10.Text = "Price";
+            Price10.Text = "60";
             // 
             // BalanceLabel
             // 
@@ -352,6 +363,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Store3";
             Text = "Store3";
+            Load += Store3_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Item7).EndInit();
             ((System.ComponentModel.ISupportInitialize)Item6).EndInit();
