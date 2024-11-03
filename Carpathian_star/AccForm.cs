@@ -21,7 +21,8 @@ namespace Carpathian_star
             Exit.FlatAppearance.BorderSize = 0;
             Exit.FlatAppearance.BorderColor = Color.White;
             Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            Exit.FlatAppearance.MouseOverBackColor = Color.Transparent; 
+            Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            this.CenterToScreen();
         }
 
         private void Enter_Click(object sender, EventArgs e)

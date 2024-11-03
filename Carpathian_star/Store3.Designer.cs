@@ -38,31 +38,31 @@
             Price3 = new Label();
             Price2 = new Label();
             Price1 = new Label();
-            item7 = new PictureBox();
-            item6 = new PictureBox();
-            item5 = new PictureBox();
-            item4 = new PictureBox();
-            item3 = new PictureBox();
-            item2 = new PictureBox();
-            item1 = new PictureBox();
-            item8 = new PictureBox();
+            Item7 = new PictureBox();
+            Item6 = new PictureBox();
+            Item5 = new PictureBox();
+            Item4 = new PictureBox();
+            Item3 = new PictureBox();
+            Item2 = new PictureBox();
+            Item1 = new PictureBox();
+            Item8 = new PictureBox();
             Price8 = new Label();
-            item9 = new PictureBox();
+            Item9 = new PictureBox();
             Price9 = new Label();
-            item10 = new PictureBox();
+            Item10 = new PictureBox();
             Price10 = new Label();
             Balance = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)item10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Item10).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -172,85 +172,85 @@
             Price1.TabIndex = 32;
             Price1.Text = "Price";
             // 
-            // item7
+            // Item7
             // 
-            item7.BackColor = Color.Transparent;
-            item7.Location = new Point(179, 382);
-            item7.Margin = new Padding(2);
-            item7.Name = "item7";
-            item7.Size = new Size(68, 109);
-            item7.TabIndex = 31;
-            item7.TabStop = false;
+            Item7.BackColor = Color.Transparent;
+            Item7.Location = new Point(179, 382);
+            Item7.Margin = new Padding(2);
+            Item7.Name = "Item7";
+            Item7.Size = new Size(68, 109);
+            Item7.TabIndex = 31;
+            Item7.TabStop = false;
             // 
-            // item6
+            // Item6
             // 
-            item6.BackColor = Color.Transparent;
-            item6.Location = new Point(30, 398);
-            item6.Margin = new Padding(2);
-            item6.Name = "item6";
-            item6.Size = new Size(147, 93);
-            item6.TabIndex = 30;
-            item6.TabStop = false;
+            Item6.BackColor = Color.Transparent;
+            Item6.Location = new Point(30, 398);
+            Item6.Margin = new Padding(2);
+            Item6.Name = "Item6";
+            Item6.Size = new Size(147, 93);
+            Item6.TabIndex = 30;
+            Item6.TabStop = false;
             // 
-            // item5
+            // Item5
             // 
-            item5.BackColor = Color.Transparent;
-            item5.Location = new Point(601, 257);
-            item5.Margin = new Padding(2);
-            item5.Name = "item5";
-            item5.Size = new Size(70, 83);
-            item5.TabIndex = 29;
-            item5.TabStop = false;
+            Item5.BackColor = Color.Transparent;
+            Item5.Location = new Point(601, 257);
+            Item5.Margin = new Padding(2);
+            Item5.Name = "Item5";
+            Item5.Size = new Size(70, 83);
+            Item5.TabIndex = 29;
+            Item5.TabStop = false;
             // 
-            // item4
+            // Item4
             // 
-            item4.BackColor = Color.Transparent;
-            item4.Location = new Point(393, 257);
-            item4.Margin = new Padding(2);
-            item4.Name = "item4";
-            item4.Size = new Size(206, 86);
-            item4.TabIndex = 28;
-            item4.TabStop = false;
+            Item4.BackColor = Color.Transparent;
+            Item4.Location = new Point(393, 257);
+            Item4.Margin = new Padding(2);
+            Item4.Name = "Item4";
+            Item4.Size = new Size(206, 86);
+            Item4.TabIndex = 28;
+            Item4.TabStop = false;
             // 
-            // item3
+            // Item3
             // 
-            item3.BackColor = Color.Transparent;
-            item3.Location = new Point(247, 242);
-            item3.Margin = new Padding(2);
-            item3.Name = "item3";
-            item3.Size = new Size(142, 101);
-            item3.TabIndex = 27;
-            item3.TabStop = false;
+            Item3.BackColor = Color.Transparent;
+            Item3.Location = new Point(247, 242);
+            Item3.Margin = new Padding(2);
+            Item3.Name = "Item3";
+            Item3.Size = new Size(142, 101);
+            Item3.TabIndex = 27;
+            Item3.TabStop = false;
             // 
-            // item2
+            // Item2
             // 
-            item2.BackColor = Color.Transparent;
-            item2.Location = new Point(25, 257);
-            item2.Margin = new Padding(2);
-            item2.Name = "item2";
-            item2.Size = new Size(152, 86);
-            item2.TabIndex = 26;
-            item2.TabStop = false;
+            Item2.BackColor = Color.Transparent;
+            Item2.Location = new Point(25, 257);
+            Item2.Margin = new Padding(2);
+            Item2.Name = "Item2";
+            Item2.Size = new Size(152, 86);
+            Item2.TabIndex = 26;
+            Item2.TabStop = false;
             // 
-            // item1
+            // Item1
             // 
-            item1.BackColor = Color.Transparent;
-            item1.Location = new Point(30, 96);
-            item1.Margin = new Padding(2);
-            item1.Name = "item1";
-            item1.Size = new Size(147, 110);
-            item1.TabIndex = 25;
-            item1.TabStop = false;
+            Item1.BackColor = Color.Transparent;
+            Item1.Location = new Point(30, 96);
+            Item1.Margin = new Padding(2);
+            Item1.Name = "Item1";
+            Item1.Size = new Size(147, 110);
+            Item1.TabIndex = 25;
+            Item1.TabStop = false;
             // 
-            // item8
+            // Item8
             // 
-            item8.BackColor = Color.Transparent;
-            item8.Location = new Point(251, 382);
-            item8.Margin = new Padding(2);
-            item8.Name = "item8";
-            item8.Size = new Size(138, 109);
-            item8.TabIndex = 39;
-            item8.TabStop = false;
+            Item8.BackColor = Color.Transparent;
+            Item8.Location = new Point(251, 382);
+            Item8.Margin = new Padding(2);
+            Item8.Name = "Item8";
+            Item8.Size = new Size(138, 109);
+            Item8.TabIndex = 39;
+            Item8.TabStop = false;
             // 
             // Price8
             // 
@@ -263,15 +263,15 @@
             Price8.TabIndex = 40;
             Price8.Text = "Price";
             // 
-            // item9
+            // Item9
             // 
-            item9.BackColor = Color.Transparent;
-            item9.Location = new Point(393, 382);
-            item9.Margin = new Padding(2);
-            item9.Name = "item9";
-            item9.Size = new Size(206, 109);
-            item9.TabIndex = 41;
-            item9.TabStop = false;
+            Item9.BackColor = Color.Transparent;
+            Item9.Location = new Point(393, 382);
+            Item9.Margin = new Padding(2);
+            Item9.Name = "Item9";
+            Item9.Size = new Size(206, 109);
+            Item9.TabIndex = 41;
+            Item9.TabStop = false;
             // 
             // Price9
             // 
@@ -284,15 +284,15 @@
             Price9.TabIndex = 42;
             Price9.Text = "Price";
             // 
-            // item10
+            // Item10
             // 
-            item10.BackColor = Color.Transparent;
-            item10.Location = new Point(608, 393);
-            item10.Margin = new Padding(2);
-            item10.Name = "item10";
-            item10.Size = new Size(134, 98);
-            item10.TabIndex = 43;
-            item10.TabStop = false;
+            Item10.BackColor = Color.Transparent;
+            Item10.Location = new Point(608, 393);
+            Item10.Margin = new Padding(2);
+            Item10.Name = "Item10";
+            Item10.Size = new Size(134, 98);
+            Item10.TabIndex = 43;
+            Item10.TabStop = false;
             // 
             // Price10
             // 
@@ -326,11 +326,11 @@
             ClientSize = new Size(807, 594);
             Controls.Add(Balance);
             Controls.Add(Price10);
-            Controls.Add(item10);
+            Controls.Add(Item10);
             Controls.Add(Price9);
-            Controls.Add(item9);
+            Controls.Add(Item9);
             Controls.Add(Price8);
-            Controls.Add(item8);
+            Controls.Add(Item8);
             Controls.Add(Price7);
             Controls.Add(Price6);
             Controls.Add(Price5);
@@ -338,13 +338,13 @@
             Controls.Add(Price3);
             Controls.Add(Price2);
             Controls.Add(Price1);
-            Controls.Add(item7);
-            Controls.Add(item6);
-            Controls.Add(item5);
-            Controls.Add(item4);
-            Controls.Add(item3);
-            Controls.Add(item2);
-            Controls.Add(item1);
+            Controls.Add(Item7);
+            Controls.Add(Item6);
+            Controls.Add(Item5);
+            Controls.Add(Item4);
+            Controls.Add(Item3);
+            Controls.Add(Item2);
+            Controls.Add(Item1);
             Controls.Add(back_button);
             Controls.Add(pictureBox1);
             DoubleBuffered = true;
@@ -352,16 +352,16 @@
             Name = "Store3";
             Text = "Store3";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)item10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Item10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -376,18 +376,18 @@
         private Label Price3;
         private Label Price2;
         private Label Price1;
-        private PictureBox item7;
-        private PictureBox item6;
-        private PictureBox item5;
-        private PictureBox item4;
-        private PictureBox item3;
-        private PictureBox item2;
-        private PictureBox item1;
-        private PictureBox item8;
+        private PictureBox Item7;
+        private PictureBox Item6;
+        private PictureBox Item5;
+        private PictureBox Item4;
+        private PictureBox Item3;
+        private PictureBox Item2;
+        private PictureBox Item1;
+        private PictureBox Item8;
         private Label Price8;
-        private PictureBox item9;
+        private PictureBox Item9;
         private Label Price9;
-        private PictureBox item10;
+        private PictureBox Item10;
         private Label Price10;
         private Label Balance;
     }

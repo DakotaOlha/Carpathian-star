@@ -53,6 +53,14 @@ namespace Carpathian_star
                         //store3.Show();
                         break;
                     }
+                case 4:
+                    {
+                        Store4 store4 = new Store4(this);
+                        store4.FormClosed += (s, args) => form1.Show();
+                        store4.BalanceLabel.Text = form1.Balance.ToString();
+                        store4.Show();
+                        break;
+                    }
                 default:
                     break;
             }

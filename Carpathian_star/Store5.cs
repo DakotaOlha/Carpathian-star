@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Carpathian_star
 {
-    public partial class Store3 : Form
+    public partial class Store5 : Form
     {
-        public Store3()
+        public Store5()
         {
             InitializeComponent();
-            this.CenterToScreen();
         }
     }
 }

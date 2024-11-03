@@ -11,6 +11,7 @@ namespace Carpathian_star
 
         public Form1()
         {
+            this.CenterToScreen();
             InitializeComponent();
             childForm = new EnterWindow(this);
             childForm.FormClosed += (s, args) => this.Show();
