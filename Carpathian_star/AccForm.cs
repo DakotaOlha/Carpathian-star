@@ -30,7 +30,7 @@ namespace Carpathian_star
             {
                 string login = Login_textBox.Text,
                     password = Password_textBox.Text,
-                    filePath = @"C:\StarOfKarpaty\Carpathian-star\Carpathian_star\Dani.dot",
+                    filePath = @"C:\StarOfKarpaty\Carpathian-star\Carpathian_star\bin\Debug\net8.0-windows\Dani.dot",
                     line = $"{login}, {password}, 500";
                 var matchingLine = File.ReadLines(filePath).FirstOrDefault(line => line.StartsWith($"{login}"));
 
