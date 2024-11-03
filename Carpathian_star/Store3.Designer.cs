@@ -119,7 +119,7 @@
             // 
             Price5.AutoSize = true;
             Price5.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price5.Location = new Point(608, 329);
+            Price5.Location = new Point(633, 329);
             Price5.Margin = new Padding(2, 0, 2, 0);
             Price5.Name = "Price5";
             Price5.Size = new Size(56, 28);
@@ -130,7 +130,7 @@
             // 
             Price4.AutoSize = true;
             Price4.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price4.Location = new Point(465, 329);
+            Price4.Location = new Point(489, 329);
             Price4.Margin = new Padding(2, 0, 2, 0);
             Price4.Name = "Price4";
             Price4.Size = new Size(56, 28);
@@ -185,17 +185,17 @@
             // Item6
             // 
             Item6.BackColor = Color.Transparent;
-            Item6.Location = new Point(30, 398);
+            Item6.Location = new Point(39, 398);
             Item6.Margin = new Padding(2);
             Item6.Name = "Item6";
-            Item6.Size = new Size(147, 93);
+            Item6.Size = new Size(138, 82);
             Item6.TabIndex = 30;
             Item6.TabStop = false;
             // 
             // Item5
             // 
             Item5.BackColor = Color.Transparent;
-            Item5.Location = new Point(601, 257);
+            Item5.Location = new Point(626, 260);
             Item5.Margin = new Padding(2);
             Item5.Name = "Item5";
             Item5.Size = new Size(70, 83);
@@ -205,50 +205,50 @@
             // Item4
             // 
             Item4.BackColor = Color.Transparent;
-            Item4.Location = new Point(393, 257);
+            Item4.Location = new Point(407, 257);
             Item4.Margin = new Padding(2);
             Item4.Name = "Item4";
-            Item4.Size = new Size(206, 86);
+            Item4.Size = new Size(215, 86);
             Item4.TabIndex = 28;
             Item4.TabStop = false;
             // 
             // Item3
             // 
             Item3.BackColor = Color.Transparent;
-            Item3.Location = new Point(247, 242);
+            Item3.Location = new Point(261, 257);
             Item3.Margin = new Padding(2);
             Item3.Name = "Item3";
-            Item3.Size = new Size(142, 101);
+            Item3.Size = new Size(128, 70);
             Item3.TabIndex = 27;
             Item3.TabStop = false;
             // 
             // Item2
             // 
             Item2.BackColor = Color.Transparent;
-            Item2.Location = new Point(25, 257);
+            Item2.Location = new Point(39, 257);
             Item2.Margin = new Padding(2);
             Item2.Name = "Item2";
-            Item2.Size = new Size(152, 86);
+            Item2.Size = new Size(138, 83);
             Item2.TabIndex = 26;
             Item2.TabStop = false;
             // 
             // Item1
             // 
             Item1.BackColor = Color.Transparent;
-            Item1.Location = new Point(30, 96);
+            Item1.Location = new Point(39, 96);
             Item1.Margin = new Padding(2);
             Item1.Name = "Item1";
-            Item1.Size = new Size(147, 110);
+            Item1.Size = new Size(138, 110);
             Item1.TabIndex = 25;
             Item1.TabStop = false;
             // 
             // Item8
             // 
             Item8.BackColor = Color.Transparent;
-            Item8.Location = new Point(251, 382);
+            Item8.Location = new Point(261, 382);
             Item8.Margin = new Padding(2);
             Item8.Name = "Item8";
-            Item8.Size = new Size(138, 109);
+            Item8.Size = new Size(142, 98);
             Item8.TabIndex = 39;
             Item8.TabStop = false;
             // 
@@ -266,10 +266,10 @@
             // Item9
             // 
             Item9.BackColor = Color.Transparent;
-            Item9.Location = new Point(393, 382);
+            Item9.Location = new Point(407, 382);
             Item9.Margin = new Padding(2);
             Item9.Name = "Item9";
-            Item9.Size = new Size(206, 109);
+            Item9.Size = new Size(215, 98);
             Item9.TabIndex = 41;
             Item9.TabStop = false;
             // 
@@ -277,7 +277,7 @@
             // 
             Price9.AutoSize = true;
             Price9.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price9.Location = new Point(465, 474);
+            Price9.Location = new Point(489, 474);
             Price9.Margin = new Padding(2, 0, 2, 0);
             Price9.Name = "Price9";
             Price9.Size = new Size(56, 28);
@@ -287,10 +287,10 @@
             // Item10
             // 
             Item10.BackColor = Color.Transparent;
-            Item10.Location = new Point(608, 393);
+            Item10.Location = new Point(626, 393);
             Item10.Margin = new Padding(2);
             Item10.Name = "Item10";
-            Item10.Size = new Size(134, 98);
+            Item10.Size = new Size(147, 87);
             Item10.TabIndex = 43;
             Item10.TabStop = false;
             // 
@@ -298,7 +298,7 @@
             // 
             Price10.AutoSize = true;
             Price10.Font = new Font("Pixeled", 6F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Price10.Location = new Point(645, 474);
+            Price10.Location = new Point(669, 474);
             Price10.Margin = new Padding(2, 0, 2, 0);
             Price10.Name = "Price10";
             Price10.Size = new Size(56, 28);
@@ -323,6 +323,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(807, 594);
             Controls.Add(Balance);
             Controls.Add(Price10);
