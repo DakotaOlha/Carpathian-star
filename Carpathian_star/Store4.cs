@@ -15,6 +15,7 @@ namespace Carpathian_star
         public Store4()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
     }
 }
