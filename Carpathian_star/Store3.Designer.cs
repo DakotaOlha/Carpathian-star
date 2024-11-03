@@ -51,7 +51,7 @@
             Price9 = new Label();
             Item10 = new PictureBox();
             Price10 = new Label();
-            Balance = new Label();
+            BalanceLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Item7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Item6).BeginInit();
@@ -305,19 +305,19 @@
             Price10.TabIndex = 44;
             Price10.Text = "Price";
             // 
-            // Balance
+            // BalanceLabel
             // 
-            Balance.AutoSize = true;
-            Balance.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Balance.ForeColor = Color.LightYellow;
-            Balance.Image = (Image)resources.GetObject("Balance.Image");
-            Balance.Location = new Point(816, 21);
-            Balance.Margin = new Padding(4, 0, 4, 0);
-            Balance.Name = "Balance";
-            Balance.Size = new Size(164, 45);
-            Balance.TabIndex = 45;
-            Balance.Text = "_________";
-            Balance.TextAlign = ContentAlignment.MiddleCenter;
+            BalanceLabel.AutoSize = true;
+            BalanceLabel.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            BalanceLabel.ForeColor = Color.LightYellow;
+            BalanceLabel.Image = (Image)resources.GetObject("BalanceLabel.Image");
+            BalanceLabel.Location = new Point(816, 21);
+            BalanceLabel.Margin = new Padding(4, 0, 4, 0);
+            BalanceLabel.Name = "BalanceLabel";
+            BalanceLabel.Size = new Size(164, 45);
+            BalanceLabel.TabIndex = 45;
+            BalanceLabel.Text = "_________";
+            BalanceLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Store3
             // 
@@ -326,7 +326,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(807, 594);
-            Controls.Add(Balance);
+            Controls.Add(BalanceLabel);
             Controls.Add(Price10);
             Controls.Add(Item10);
             Controls.Add(Price9);
@@ -351,7 +351,7 @@
             Controls.Add(pictureBox1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Store3";
             Text = "Store3";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -392,6 +392,6 @@
         private Label Price9;
         private PictureBox Item10;
         private Label Price10;
-        private Label Balance;
+        public Label BalanceLabel;
     }
 }

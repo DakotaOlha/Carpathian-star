@@ -47,10 +47,10 @@ namespace Carpathian_star
                     }
                 case 3:
                     {
-                        //Store3 store3 = new Store3(this);
-                        //store3.FormClosed += (s, args) => form1.Show();
-                        //store3.BalanceLabel.Text = form1.Balance.ToString();
-                        //store3.Show();
+                        Store3 store3 = new Store3(this);
+                        store3.FormClosed += (s, args) => form1.Show();
+                        store3.BalanceLabel.Text = form1.Balance.ToString();
+                        store3.Show();
                         break;
                     }
                 case 4:
@@ -59,6 +59,22 @@ namespace Carpathian_star
                         store4.FormClosed += (s, args) => form1.Show();
                         store4.BalanceLabel.Text = form1.Balance.ToString();
                         store4.Show();
+                        break;
+                    }
+                case 5:
+                    {
+                        Store5 store5 = new Store5(this);
+                        store5.FormClosed += (s, args) => form1.Show();
+                        store5.BalanceLabel.Text = form1.Balance.ToString();
+                        store5.Show();
+                        break;
+                    }
+                case 6:
+                    {
+                        Store6 store6 = new Store6(this);
+                        store6.FormClosed += (s, args) => form1.Show();
+                        store6.BalanceLabel.Text = form1.Balance.ToString();
+                        store6.Show();
                         break;
                     }
                 default:
