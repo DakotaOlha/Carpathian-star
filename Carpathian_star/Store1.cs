@@ -20,6 +20,7 @@ namespace Carpathian_star
             baseForm = form;
             baseForm.Hide();
             this.FormClosed += (s, args) => baseForm.form1.Show();
+
         }
 
         private void back_button_Click(object sender, EventArgs e)

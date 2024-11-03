@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Carpathian_star
 {
@@ -20,6 +21,10 @@ namespace Carpathian_star
             childAccForm = new AccForm(this);
             childAccForm.FormClosed += (s, args) => this.Show();
             parentform = parent;
+            Exit.FlatAppearance.BorderSize = 0;
+            Profile.FlatAppearance.BorderSize = 0;
+            Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
 
         private void EnterWindow_Load(object sender, EventArgs e)
@@ -38,6 +43,11 @@ namespace Carpathian_star
         {
             parentform.Show();
             this.Close();
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            parentform.Exit_Click(sender, e);
         }
     }
 }
