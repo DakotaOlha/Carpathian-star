@@ -21,6 +21,11 @@ namespace Carpathian_star
             baseForm.Hide();
             this.FormClosed += (s, args) => baseForm.form1.Show();
 
+            this.ShowIcon = false;
+            var screen = Screen.FromControl(this);
+            this.Top = screen.Bounds.Height / 2 - this.Height / 2;
+            this.Left = screen.Bounds.Width / 2 - this.Width / 2;
+
         }
 
         private void back_button_Click(object sender, EventArgs e)
@@ -28,12 +33,12 @@ namespace Carpathian_star
             this.Close();
         }
 
-        private void item1_MouseClick(object sender, MouseEventArgs e)
+        private void CorectBalanse(Label label)
         {
-            if (baseForm.form1.Balance >= Convert.ToInt64(Price1.Text))
+            if (baseForm.form1.Balance >= Convert.ToInt64(label.Text))
             {
-                baseForm.form1.Balance -= Convert.ToInt64(Price1.Text);
-                textBox1.Text = baseForm.form1.Balance.ToString();
+                baseForm.form1.Balance -= Convert.ToInt64(label.Text);
+                BalanceLabel.Text = baseForm.form1.Balance.ToString();
                 string filePath = System.IO.Path.Combine(Environment.CurrentDirectory, "Dani.dot");
                 try
                 {
@@ -62,6 +67,41 @@ namespace Carpathian_star
             {
                 MessageBox.Show("У вас недостатньо коштів");
             }
+        }
+
+        private void item1_MouseClick(object sender, MouseEventArgs e)
+        {
+            CorectBalanse(Price1);
+        }
+
+        private void item2_Click(object sender, EventArgs e)
+        {
+            CorectBalanse(Price2);
+        }
+
+        private void item3_Click(object sender, EventArgs e)
+        {
+            CorectBalanse(Price3);
+        }
+
+        private void item4_Click(object sender, EventArgs e)
+        {
+            CorectBalanse(Price4);
+        }
+
+        private void item5_Click(object sender, EventArgs e)
+        {
+            CorectBalanse(Price5);
+        }
+
+        private void item6_Click(object sender, EventArgs e)
+        {
+            CorectBalanse(Price6);
+        }
+
+        private void item7_Click(object sender, EventArgs e)
+        {
+            CorectBalanse(Price7);
         }
     }
 }
