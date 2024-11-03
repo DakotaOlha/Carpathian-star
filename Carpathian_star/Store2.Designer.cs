@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Store2));
-            textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
             back_button = new Button();
             Price1 = new Label();
@@ -46,6 +45,7 @@
             item5 = new PictureBox();
             item4 = new PictureBox();
             item3 = new PictureBox();
+            Balance = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)item1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)item2).BeginInit();
@@ -56,23 +56,12 @@
             ((System.ComponentModel.ISupportInitialize)item3).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
-            // 
-            textBox1.Enabled = false;
-            textBox1.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            textBox1.ForeColor = Color.Olive;
-            textBox1.Location = new Point(659, 10);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(131, 55);
-            textBox1.TabIndex = 3;
-            // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(602, 17);
+            pictureBox1.Location = new Point(602, 13);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(46, 43);
@@ -244,6 +233,19 @@
             item3.TabIndex = 25;
             item3.TabStop = false;
             // 
+            // Balance
+            // 
+            Balance.AutoSize = true;
+            Balance.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Balance.ForeColor = Color.LightYellow;
+            Balance.Image = (Image)resources.GetObject("Balance.Image");
+            Balance.Location = new Point(653, 17);
+            Balance.Name = "Balance";
+            Balance.Size = new Size(134, 37);
+            Balance.TabIndex = 35;
+            Balance.Text = "_________";
+            Balance.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Store2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -251,6 +253,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(807, 594);
+            Controls.Add(Balance);
             Controls.Add(Price7);
             Controls.Add(Price6);
             Controls.Add(Price5);
@@ -266,7 +269,6 @@
             Controls.Add(Price1);
             Controls.Add(item1);
             Controls.Add(back_button);
-            Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Store2";
@@ -284,8 +286,6 @@
         }
 
         #endregion
-
-        public TextBox textBox1;
         private PictureBox pictureBox1;
         private Button back_button;
         private Label Price1;
@@ -302,5 +302,6 @@
         private PictureBox item5;
         private PictureBox item4;
         private PictureBox item3;
+        private Label Balance;
     }
 }

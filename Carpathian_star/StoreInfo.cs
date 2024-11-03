@@ -33,7 +33,7 @@ namespace Carpathian_star
                     {
                         Store1 store1 = new Store1(this);
                         store1.FormClosed += (s, args) => form1.Show();
-                        store1.textBox1.Text = form1.Balance.ToString();
+                        store1.Balance.Text = form1.Balance.ToString();
                         store1.Show();
                         break;
                     }
