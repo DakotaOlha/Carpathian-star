@@ -25,6 +25,7 @@ namespace Carpathian_star
 
         private void Store5_Load(object sender, EventArgs e)
         {
+            Program.ApplyCustomFont(this.Controls);
 
         }
 

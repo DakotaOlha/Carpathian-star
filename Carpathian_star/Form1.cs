@@ -13,6 +13,7 @@ namespace Carpathian_star
         {
             this.CenterToScreen();
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
             childForm = new EnterWindow(this);
             childForm.FormClosed += (s, args) => this.Show();
             this.Text = "";

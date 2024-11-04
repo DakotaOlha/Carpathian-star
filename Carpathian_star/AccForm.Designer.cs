@@ -133,6 +133,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "AccForm";
             Text = "AccForm";
+            Load += AccForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

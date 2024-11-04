@@ -16,6 +16,8 @@ namespace Carpathian_star
         public Store6(StoreInfo form)
         {
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
+
             baseForm = form;
             baseForm.Hide();
             this.FormClosed += (s, args) => baseForm.form1.Show();

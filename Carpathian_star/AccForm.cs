@@ -17,6 +17,7 @@ namespace Carpathian_star
         public AccForm(EnterWindow form)
         {
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
             enterWindow = form;
             Exit.FlatAppearance.BorderSize = 0;
             Exit.FlatAppearance.BorderColor = Color.White;
@@ -78,6 +79,11 @@ namespace Carpathian_star
         private void Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AccForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
