@@ -18,7 +18,6 @@ namespace Carpathian_star
         {
             InitializeComponent();
             Program.ApplyCustomFont(this.Controls);
-
             form1 = form;
             numForm = i;
             var screen = Screen.FromControl(this);
