@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Carpathian_star
 {
@@ -17,12 +18,15 @@ namespace Carpathian_star
         public AccForm(EnterWindow form)
         {
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
             enterWindow = form;
             Exit.FlatAppearance.BorderSize = 0;
             Exit.FlatAppearance.BorderColor = Color.White;
             Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
             Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
             this.CenterToScreen();
+
+            Login_textBox.Focus();
         }
 
         private void Enter_Click(object sender, EventArgs e)
@@ -33,6 +37,10 @@ namespace Carpathian_star
                     password = Password_textBox.Text,
                     filePath = System.IO.Path.Combine(Environment.CurrentDirectory, "Dani.dot"),
                     line = $"{login}, {password}, 500";
+                if (password.Length < 4) {
+                    MessageBox.Show("Пароль повинен мати не менше 4 знаків.");
+                    return;
+                }
                 var matchingLine = File.ReadLines(filePath).FirstOrDefault(line => line.StartsWith($"{login},"));
 
                 if (matchingLine != null)
@@ -78,6 +86,29 @@ namespace Carpathian_star
         private void Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void AccForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_textBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Password_textBox.Focus();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void Password_textBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Enter_Click(sender, e);
+            }
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Carpathian_star
         public EnterWindow(Form1 parent)
         {
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
             childAccForm = new AccForm(this);
             childAccForm.FormClosed += (s, args) => this.Show();
             parentform = parent;

@@ -79,6 +79,7 @@
             Login_textBox.Name = "Login_textBox";
             Login_textBox.Size = new Size(287, 58);
             Login_textBox.TabIndex = 3;
+            Login_textBox.KeyUp += Login_textBox_KeyUp;
             // 
             // Password_textBox
             // 
@@ -88,6 +89,7 @@
             Password_textBox.Name = "Password_textBox";
             Password_textBox.Size = new Size(287, 58);
             Password_textBox.TabIndex = 4;
+            Password_textBox.KeyUp += Password_textBox_KeyUp;
             // 
             // Enter
             // 
@@ -133,6 +135,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "AccForm";
             Text = "AccForm";
+            Load += AccForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

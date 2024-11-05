@@ -17,6 +17,7 @@ namespace Carpathian_star
         public StoreInfo(Form1 form, int i)
         {
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
             form1 = form;
             numForm = i;
             this.CenterToScreen();
@@ -84,6 +85,11 @@ namespace Carpathian_star
         {
             this.Hide();
             form1.Show();
+        }
+
+        private void StoreInfo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

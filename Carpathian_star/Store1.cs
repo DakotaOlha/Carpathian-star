@@ -17,6 +17,7 @@ namespace Carpathian_star
         public Store1(StoreInfo form)
         {
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
             baseForm = form;
             baseForm.Hide();
             this.FormClosed += (s, args) => baseForm.form1.Show();
@@ -98,6 +99,11 @@ namespace Carpathian_star
         private void item7_Click(object sender, EventArgs e)
         {
             CorectBalanse(Price7);
+        }
+
+        private void Store1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

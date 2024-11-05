@@ -182,6 +182,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "StoreInfo";
             Text = "StoreInfo";
+            Load += StoreInfo_Load;
             ResumeLayout(false);
             PerformLayout();
         }
