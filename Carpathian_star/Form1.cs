@@ -1,14 +1,19 @@
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace Carpathian_star
 {
     public partial class Form1 : Form
     {
         public long Balance = 0;
+        public string login, password;
         int count = 0;
         EnterWindow childForm;
 
         public Form1()
         {
+            this.CenterToScreen();
             InitializeComponent();
+            Program.ApplyCustomFont(this.Controls);
             childForm = new EnterWindow(this);
             childForm.FormClosed += (s, args) => this.Show();
             this.Text = "";
@@ -16,6 +21,9 @@ namespace Carpathian_star
             var screen = Screen.FromControl(this);
             this.Top = screen.Bounds.Height / 2 - this.Height / 2;
             this.Left = screen.Bounds.Width / 2 - this.Width / 2;
+            Exit.FlatAppearance.BorderSize = 0;
+            Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
 
 
@@ -63,7 +71,7 @@ namespace Carpathian_star
         }
         private void Store7_MouseEnter(object sender, EventArgs e)
         {
-            Store7.BackColor = Color.GreenYellow;
+            Store7.BackColor = Color.Red;
         }
         private void Store7_MouseLeave(object sender, EventArgs e)
         {
@@ -97,9 +105,64 @@ namespace Carpathian_star
 
         private void Store1_Click(object sender, EventArgs e)
         {
+            StoreInfo storeInfo = new StoreInfo(this, 7);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        public void Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Store4_Click(object sender, EventArgs e)
+        {
             StoreInfo storeInfo = new StoreInfo(this, 1);
             storeInfo.FormClosed += (s, args) => this.Show();
             storeInfo.ShowDialog();
+        }
+
+        private void Store8_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 2);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store5_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 3);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store2_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 4);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store3_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 5);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Store6_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 6);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Exit_Click(sender, e);
+            }
         }
     }
 }

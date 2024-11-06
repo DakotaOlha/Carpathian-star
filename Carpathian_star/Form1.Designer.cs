@@ -37,6 +37,7 @@
             Store6 = new Button();
             Store7 = new Button();
             Store8 = new Button();
+            Exit = new Button();
             SuspendLayout();
             // 
             // Store1
@@ -62,6 +63,7 @@
             Store2.Size = new Size(25, 22);
             Store2.TabIndex = 1;
             Store2.UseVisualStyleBackColor = false;
+            Store2.Click += Store2_Click;
             Store2.MouseEnter += Store2_MouseEnter;
             Store2.MouseLeave += Store2_MouseLeave;
             // 
@@ -74,6 +76,7 @@
             Store3.Size = new Size(25, 22);
             Store3.TabIndex = 2;
             Store3.UseVisualStyleBackColor = false;
+            Store3.Click += Store3_Click;
             Store3.MouseEnter += Store3_MouseEnter;
             Store3.MouseLeave += Store3_MouseLeave;
             // 
@@ -86,6 +89,7 @@
             Store4.Size = new Size(25, 22);
             Store4.TabIndex = 3;
             Store4.UseVisualStyleBackColor = false;
+            Store4.Click += Store4_Click;
             Store4.MouseEnter += Store4_MouseEnter;
             Store4.MouseLeave += Store4_MouseLeave;
             // 
@@ -98,6 +102,7 @@
             Store5.Size = new Size(25, 22);
             Store5.TabIndex = 4;
             Store5.UseVisualStyleBackColor = false;
+            Store5.Click += Store5_Click;
             Store5.MouseEnter += Store5_MouseEnter;
             Store5.MouseLeave += Store5_MouseLeave;
             // 
@@ -110,6 +115,7 @@
             Store6.Size = new Size(25, 22);
             Store6.TabIndex = 5;
             Store6.UseVisualStyleBackColor = false;
+            Store6.Click += Store6_Click;
             Store6.MouseEnter += Store6_MouseEnter;
             Store6.MouseLeave += Store6_MouseLeave;
             // 
@@ -134,8 +140,25 @@
             Store8.Size = new Size(25, 22);
             Store8.TabIndex = 7;
             Store8.UseVisualStyleBackColor = false;
+            Store8.Click += Store8_Click;
             Store8.MouseEnter += Store8_MouseEnter;
             Store8.MouseLeave += Store8_MouseLeave;
+            // 
+            // Exit
+            // 
+            Exit.BackColor = Color.Transparent;
+            Exit.BackgroundImage = (Image)resources.GetObject("Exit.BackgroundImage");
+            Exit.BackgroundImageLayout = ImageLayout.Stretch;
+            Exit.FlatStyle = FlatStyle.Flat;
+            Exit.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Exit.Location = new Point(1209, 2);
+            Exit.Margin = new Padding(4);
+            Exit.Name = "Exit";
+            Exit.Size = new Size(44, 41);
+            Exit.TabIndex = 8;
+            Exit.TextAlign = ContentAlignment.TopRight;
+            Exit.UseVisualStyleBackColor = false;
+            Exit.Click += Exit_Click;
             // 
             // Form1
             // 
@@ -144,6 +167,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1255, 970);
+            Controls.Add(Exit);
             Controls.Add(Store8);
             Controls.Add(Store7);
             Controls.Add(Store6);
@@ -157,6 +181,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            KeyDown += Form1_KeyDown;
             ResumeLayout(false);
         }
 
@@ -170,5 +195,6 @@
         private Button Store6;
         private Button Store7;
         private Button Store8;
+        private Button Exit;
     }
 }
