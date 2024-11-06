@@ -19,6 +19,7 @@ namespace Carpathian_star
         EnterWindow enterWindow;
         public AccForm(EnterWindow form)
         {
+            //
             InitializeComponent();
             Program.ApplyCustomFont(this.Controls);
 
