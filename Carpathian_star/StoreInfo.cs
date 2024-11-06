@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Carpathian_star
 {
@@ -21,6 +22,14 @@ namespace Carpathian_star
             form1 = form;
             numForm = i;
             this.CenterToScreen();
+        }
+
+        public void SetLabelText(string text, string text1, string text2, string text3)
+        {
+            OwnerLabel.Text = text; 
+            ProductLabel.Text = text1;
+            WorkHoursLabel.Text = text2;
+            ReputationLabel.Text = text3;
         }
 
         private void Next_button_Click(object sender, EventArgs e)

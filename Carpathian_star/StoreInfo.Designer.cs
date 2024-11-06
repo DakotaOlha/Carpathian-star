@@ -40,6 +40,10 @@
             Reputaion = new Label();
             back_button = new Button();
             Next_button = new Button();
+            OwnerLabel = new Label();
+            WorkHoursLabel = new Label();
+            ProductLabel = new Label();
+            ReputationLabel = new Label();
             SuspendLayout();
             // 
             // label1
@@ -57,7 +61,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(12, 110);
+            label2.Location = new Point(12, 102);
             label2.Name = "label2";
             label2.Size = new Size(159, 51);
             label2.TabIndex = 1;
@@ -67,7 +71,7 @@
             // 
             Owner.AutoSize = true;
             Owner.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Owner.Location = new Point(177, 110);
+            Owner.Location = new Point(171, 103);
             Owner.Name = "Owner";
             Owner.Size = new Size(36, 51);
             Owner.TabIndex = 2;
@@ -77,7 +81,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label3.Location = new Point(12, 203);
+            label3.Location = new Point(12, 194);
             label3.Name = "label3";
             label3.Size = new Size(213, 51);
             label3.TabIndex = 3;
@@ -87,7 +91,7 @@
             // 
             Product.AutoSize = true;
             Product.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Product.Location = new Point(231, 203);
+            Product.Location = new Point(224, 198);
             Product.Name = "Product";
             Product.Size = new Size(36, 51);
             Product.TabIndex = 4;
@@ -117,7 +121,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label5.Location = new Point(12, 366);
+            label5.Location = new Point(12, 386);
             label5.Name = "label5";
             label5.Size = new Size(188, 51);
             label5.TabIndex = 7;
@@ -127,7 +131,7 @@
             // 
             Reputaion.AutoSize = true;
             Reputaion.Font = new Font("Pixeled", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Reputaion.Location = new Point(206, 368);
+            Reputaion.Location = new Point(199, 390);
             Reputaion.Name = "Reputaion";
             Reputaion.Size = new Size(36, 51);
             Reputaion.TabIndex = 8;
@@ -141,7 +145,7 @@
             back_button.FlatStyle = FlatStyle.Flat;
             back_button.Font = new Font("Pixeled", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
             back_button.ForeColor = SystemColors.ButtonFace;
-            back_button.Location = new Point(12, 441);
+            back_button.Location = new Point(12, 464);
             back_button.Name = "back_button";
             back_button.Size = new Size(78, 56);
             back_button.TabIndex = 9;
@@ -156,18 +160,57 @@
             Next_button.FlatStyle = FlatStyle.Flat;
             Next_button.Font = new Font("Pixeled", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Next_button.ForeColor = SystemColors.ButtonFace;
-            Next_button.Location = new Point(596, 441);
+            Next_button.Location = new Point(617, 464);
             Next_button.Name = "Next_button";
             Next_button.Size = new Size(79, 56);
             Next_button.TabIndex = 10;
             Next_button.UseVisualStyleBackColor = false;
             Next_button.Click += Next_button_Click;
             // 
+            // OwnerLabel
+            // 
+            OwnerLabel.Font = new Font("Pixeled", 5F);
+            OwnerLabel.Location = new Point(217, 83);
+            OwnerLabel.Name = "OwnerLabel";
+            OwnerLabel.Size = new Size(444, 101);
+            OwnerLabel.TabIndex = 11;
+            OwnerLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // WorkHoursLabel
+            // 
+            WorkHoursLabel.Font = new Font("Pixeled", 5F);
+            WorkHoursLabel.Location = new Point(228, 283);
+            WorkHoursLabel.Name = "WorkHoursLabel";
+            WorkHoursLabel.Size = new Size(413, 76);
+            WorkHoursLabel.TabIndex = 12;
+            WorkHoursLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // ProductLabel
+            // 
+            ProductLabel.Font = new Font("Pixeled", 5F);
+            ProductLabel.Location = new Point(262, 183);
+            ProductLabel.Name = "ProductLabel";
+            ProductLabel.Size = new Size(427, 100);
+            ProductLabel.TabIndex = 13;
+            ProductLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // ReputationLabel
+            // 
+            ReputationLabel.Font = new Font("Pixeled", 5F);
+            ReputationLabel.Location = new Point(230, 363);
+            ReputationLabel.Name = "ReputationLabel";
+            ReputationLabel.Size = new Size(427, 161);
+            ReputationLabel.TabIndex = 14;
+            ReputationLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // StoreInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(687, 509);
+            ClientSize = new Size(703, 532);
+            Controls.Add(ProductLabel);
+            Controls.Add(WorkHoursLabel);
+            Controls.Add(OwnerLabel);
             Controls.Add(Next_button);
             Controls.Add(back_button);
             Controls.Add(Reputaion);
@@ -179,6 +222,7 @@
             Controls.Add(Owner);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(ReputationLabel);
             FormBorderStyle = FormBorderStyle.None;
             Name = "StoreInfo";
             Text = "StoreInfo";
@@ -200,5 +244,9 @@
         private Label Reputaion;
         private Button back_button;
         private Button Next_button;
+        private Label OwnerLabel;
+        private Label WorkHoursLabel;
+        private Label ProductLabel;
+        private Label ReputationLabel;
     }
 }

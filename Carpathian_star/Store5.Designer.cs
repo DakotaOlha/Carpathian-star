@@ -130,9 +130,9 @@
             Price1.Location = new Point(167, 144);
             Price1.Margin = new Padding(2, 0, 2, 0);
             Price1.Name = "Price1";
-            Price1.Size = new Size(32, 28);
+            Price1.Size = new Size(42, 28);
             Price1.TabIndex = 52;
-            Price1.Text = "35";
+            Price1.Text = "350";
             // 
             // Item2
             // 
@@ -154,9 +154,9 @@
             Price2.Location = new Point(441, 144);
             Price2.Margin = new Padding(2, 0, 2, 0);
             Price2.Name = "Price2";
-            Price2.Size = new Size(32, 28);
+            Price2.Size = new Size(42, 28);
             Price2.TabIndex = 54;
-            Price2.Text = "95";
+            Price2.Text = "950";
             // 
             // Item3
             // 
@@ -178,9 +178,9 @@
             Price3.Location = new Point(120, 313);
             Price3.Margin = new Padding(2, 0, 2, 0);
             Price3.Name = "Price3";
-            Price3.Size = new Size(32, 28);
+            Price3.Size = new Size(42, 28);
             Price3.TabIndex = 56;
-            Price3.Text = "40";
+            Price3.Text = "400";
             // 
             // Item4
             // 
@@ -202,9 +202,9 @@
             Price4.Location = new Point(241, 313);
             Price4.Margin = new Padding(2, 0, 2, 0);
             Price4.Name = "Price4";
-            Price4.Size = new Size(32, 28);
+            Price4.Size = new Size(42, 28);
             Price4.TabIndex = 58;
-            Price4.Text = "30";
+            Price4.Text = "300";
             // 
             // Item5
             // 
@@ -226,9 +226,9 @@
             Price5.Location = new Point(415, 313);
             Price5.Margin = new Padding(2, 0, 2, 0);
             Price5.Name = "Price5";
-            Price5.Size = new Size(32, 28);
+            Price5.Size = new Size(42, 28);
             Price5.TabIndex = 60;
-            Price5.Text = "35";
+            Price5.Text = "350";
             // 
             // Item6
             // 
@@ -250,9 +250,9 @@
             Price6.Location = new Point(576, 313);
             Price6.Margin = new Padding(2, 0, 2, 0);
             Price6.Name = "Price6";
-            Price6.Size = new Size(32, 28);
+            Price6.Size = new Size(42, 28);
             Price6.TabIndex = 62;
-            Price6.Text = "60";
+            Price6.Text = "600";
             // 
             // Item7
             // 
@@ -274,9 +274,9 @@
             Price7.Location = new Point(665, 313);
             Price7.Margin = new Padding(2, 0, 2, 0);
             Price7.Name = "Price7";
-            Price7.Size = new Size(32, 28);
+            Price7.Size = new Size(42, 28);
             Price7.TabIndex = 64;
-            Price7.Text = "40";
+            Price7.Text = "400";
             // 
             // Item8
             // 
@@ -298,9 +298,9 @@
             Price8.Location = new Point(179, 407);
             Price8.Margin = new Padding(2, 0, 2, 0);
             Price8.Name = "Price8";
-            Price8.Size = new Size(32, 28);
+            Price8.Size = new Size(42, 28);
             Price8.TabIndex = 66;
-            Price8.Text = "20";
+            Price8.Text = "200";
             // 
             // Item9
             // 
@@ -322,9 +322,9 @@
             Price9.Location = new Point(179, 486);
             Price9.Margin = new Padding(2, 0, 2, 0);
             Price9.Name = "Price9";
-            Price9.Size = new Size(32, 28);
+            Price9.Size = new Size(42, 28);
             Price9.TabIndex = 68;
-            Price9.Text = "45";
+            Price9.Text = "450";
             // 
             // Item10
             // 
@@ -346,9 +346,9 @@
             Price10.Location = new Point(441, 423);
             Price10.Margin = new Padding(2, 0, 2, 0);
             Price10.Name = "Price10";
-            Price10.Size = new Size(32, 28);
+            Price10.Size = new Size(42, 28);
             Price10.TabIndex = 70;
-            Price10.Text = "50";
+            Price10.Text = "500";
             // 
             // Item11
             // 
@@ -370,9 +370,9 @@
             Price11.Location = new Point(629, 486);
             Price11.Margin = new Padding(2, 0, 2, 0);
             Price11.Name = "Price11";
-            Price11.Size = new Size(32, 28);
+            Price11.Size = new Size(42, 28);
             Price11.TabIndex = 72;
-            Price11.Text = "40";
+            Price11.Text = "400";
             // 
             // Store5
             // 
