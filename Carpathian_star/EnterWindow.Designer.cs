@@ -32,6 +32,7 @@
             Start = new Button();
             Profile = new Button();
             pictureBox1 = new PictureBox();
+            Exit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             Start.FlatStyle = FlatStyle.Popup;
             Start.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Start.ForeColor = Color.LightGoldenrodYellow;
-            Start.Location = new Point(888, 621);
+            Start.Location = new Point(869, 768);
             Start.Margin = new Padding(4);
             Start.Name = "Start";
             Start.Size = new Size(338, 144);
@@ -55,14 +56,15 @@
             // 
             // Profile
             // 
-            Profile.BackColor = Color.OliveDrab;
+            Profile.BackColor = Color.DarkOliveGreen;
             Profile.BackgroundImage = (Image)resources.GetObject("Profile.BackgroundImage");
             Profile.BackgroundImageLayout = ImageLayout.Stretch;
+            Profile.FlatStyle = FlatStyle.Flat;
             Profile.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Profile.Location = new Point(1156, 15);
+            Profile.Location = new Point(1121, 30);
             Profile.Margin = new Padding(4);
             Profile.Name = "Profile";
-            Profile.Size = new Size(69, 62);
+            Profile.Size = new Size(62, 52);
             Profile.TabIndex = 3;
             Profile.TextAlign = ContentAlignment.TopRight;
             Profile.UseVisualStyleBackColor = false;
@@ -72,13 +74,29 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(41, 46);
+            pictureBox1.Location = new Point(36, 138);
             pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(926, 314);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            // 
+            // Exit
+            // 
+            Exit.BackColor = Color.Transparent;
+            Exit.BackgroundImage = (Image)resources.GetObject("Exit.BackgroundImage");
+            Exit.BackgroundImageLayout = ImageLayout.Stretch;
+            Exit.FlatStyle = FlatStyle.Flat;
+            Exit.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Exit.Location = new Point(1206, 1);
+            Exit.Margin = new Padding(4);
+            Exit.Name = "Exit";
+            Exit.Size = new Size(44, 41);
+            Exit.TabIndex = 5;
+            Exit.TextAlign = ContentAlignment.TopRight;
+            Exit.UseVisualStyleBackColor = false;
+            Exit.Click += Exit_Click;
             // 
             // EnterWindow
             // 
@@ -87,6 +105,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1255, 970);
+            Controls.Add(Exit);
             Controls.Add(pictureBox1);
             Controls.Add(Profile);
             Controls.Add(Start);
@@ -95,6 +114,7 @@
             Name = "EnterWindow";
             Text = "EnterWindow";
             Load += EnterWindow_Load;
+            KeyDown += EnterWindow_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -103,5 +123,6 @@
         private Button Profile;
         private PictureBox pictureBox1;
         public Button Start;
+        private Button Exit;
     }
 }
