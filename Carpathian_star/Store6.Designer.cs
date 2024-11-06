@@ -101,9 +101,9 @@
             Price1.Location = new Point(147, 465);
             Price1.Margin = new Padding(2, 0, 2, 0);
             Price1.Name = "Price1";
-            Price1.Size = new Size(42, 28);
+            Price1.Size = new Size(52, 28);
             Price1.TabIndex = 54;
-            Price1.Text = "700";
+            Price1.Text = "5500";
             // 
             // Item1
             // 
@@ -136,9 +136,9 @@
             Price2.Location = new Point(271, 384);
             Price2.Margin = new Padding(2, 0, 2, 0);
             Price2.Name = "Price2";
-            Price2.Size = new Size(42, 28);
+            Price2.Size = new Size(52, 28);
             Price2.TabIndex = 56;
-            Price2.Text = "200";
+            Price2.Text = "2000";
             // 
             // Item3
             // 
@@ -160,9 +160,9 @@
             Price3.Location = new Point(390, 384);
             Price3.Margin = new Padding(2, 0, 2, 0);
             Price3.Name = "Price3";
-            Price3.Size = new Size(42, 28);
+            Price3.Size = new Size(52, 28);
             Price3.TabIndex = 58;
-            Price3.Text = "305";
+            Price3.Text = "3050";
             // 
             // Item4
             // 
@@ -184,9 +184,9 @@
             Price4.Location = new Point(528, 384);
             Price4.Margin = new Padding(2, 0, 2, 0);
             Price4.Name = "Price4";
-            Price4.Size = new Size(42, 28);
+            Price4.Size = new Size(52, 28);
             Price4.TabIndex = 60;
-            Price4.Text = "250";
+            Price4.Text = "2500";
             // 
             // Item5
             // 
@@ -208,9 +208,9 @@
             Price5.Location = new Point(631, 384);
             Price5.Margin = new Padding(2, 0, 2, 0);
             Price5.Name = "Price5";
-            Price5.Size = new Size(42, 28);
+            Price5.Size = new Size(52, 28);
             Price5.TabIndex = 62;
-            Price5.Text = "400";
+            Price5.Text = "4000";
             // 
             // Store6
             // 
