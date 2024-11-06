@@ -76,6 +76,14 @@ namespace Carpathian_star
                         store6.Show();
                         break;
                     }
+                case 7:
+                    {
+                        FortuneTeller teller = new FortuneTeller(this);
+                        teller.FormClosed += (s, args) => form1.Show();
+                        teller.BalanceLabel.Text = form1.Balance.ToString();
+                        teller.Show();
+                        break;
+                    }
                 default:
                     break;
             }

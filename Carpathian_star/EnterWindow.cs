@@ -26,13 +26,15 @@ namespace Carpathian_star
             Profile.FlatAppearance.BorderSize = 0;
             Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
             Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            this.CenterToScreen();
+
+            this.KeyPreview = true;
         }
 
         private void EnterWindow_Load(object sender, EventArgs e)
         {
-            CenterToScreen();
             pictureBox1.BorderStyle = BorderStyle.None;
+
+            this.CenterToScreen();
         }
 
 
@@ -50,6 +52,26 @@ namespace Carpathian_star
         private void Exit_Click(object sender, EventArgs e)
         {
             parentform.Exit_Click(sender, e);
+        }
+
+        private void EnterWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.I)
+            {
+                Profile_Click_1(sender, e);
+                e.Handled = true;
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+            }
+            else if (e.KeyCode == Keys.Space)
+            {
+                e.Handled = true;
+            }
+            else if (e.KeyCode == Keys.Escape) { 
+                Exit_Click(sender, e);
+            }
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Carpathian_star
         }
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            Store1.BackColor = Color.Red;
+            Store1.BackColor = Color.GreenYellow;
         }
         private void button1_MouseLeave(object sender, EventArgs e)
         {
@@ -105,6 +105,9 @@ namespace Carpathian_star
 
         private void Store1_Click(object sender, EventArgs e)
         {
+            StoreInfo storeInfo = new StoreInfo(this, 7);
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
         }
 
         public void Exit_Click(object sender, EventArgs e)
@@ -152,6 +155,14 @@ namespace Carpathian_star
             StoreInfo storeInfo = new StoreInfo(this, 6);
             storeInfo.FormClosed += (s, args) => this.Show();
             storeInfo.ShowDialog();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Exit_Click(sender, e);
+            }
         }
     }
 }
