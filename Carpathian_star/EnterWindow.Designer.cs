@@ -33,6 +33,7 @@
             Profile = new Button();
             pictureBox1 = new PictureBox();
             Exit = new Button();
+            SoundButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -46,10 +47,9 @@
             Start.FlatStyle = FlatStyle.Popup;
             Start.Font = new Font("Pixeled", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Start.ForeColor = Color.LightGoldenrodYellow;
-            Start.Location = new Point(869, 768);
-            Start.Margin = new Padding(4);
+            Start.Location = new Point(695, 614);
             Start.Name = "Start";
-            Start.Size = new Size(338, 144);
+            Start.Size = new Size(270, 115);
             Start.TabIndex = 0;
             Start.UseVisualStyleBackColor = false;
             Start.Click += Start_Click_1;
@@ -61,10 +61,9 @@
             Profile.BackgroundImageLayout = ImageLayout.Stretch;
             Profile.FlatStyle = FlatStyle.Flat;
             Profile.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Profile.Location = new Point(1121, 30);
-            Profile.Margin = new Padding(4);
+            Profile.Location = new Point(897, 24);
             Profile.Name = "Profile";
-            Profile.Size = new Size(62, 52);
+            Profile.Size = new Size(50, 42);
             Profile.TabIndex = 3;
             Profile.TextAlign = ContentAlignment.TopRight;
             Profile.UseVisualStyleBackColor = false;
@@ -74,10 +73,9 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(36, 138);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(29, 110);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(926, 314);
+            pictureBox1.Size = new Size(741, 251);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -89,28 +87,41 @@
             Exit.BackgroundImageLayout = ImageLayout.Stretch;
             Exit.FlatStyle = FlatStyle.Flat;
             Exit.Font = new Font("Pixeled", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Exit.Location = new Point(1206, 1);
-            Exit.Margin = new Padding(4);
+            Exit.Location = new Point(965, 1);
             Exit.Name = "Exit";
-            Exit.Size = new Size(44, 41);
+            Exit.Size = new Size(35, 33);
             Exit.TabIndex = 5;
             Exit.TextAlign = ContentAlignment.TopRight;
             Exit.UseVisualStyleBackColor = false;
             Exit.Click += Exit_Click;
             // 
+            // SoundButton
+            // 
+            SoundButton.BackColor = Color.Transparent;
+            SoundButton.BackgroundImage = (Image)resources.GetObject("SoundButton.BackgroundImage");
+            SoundButton.BackgroundImageLayout = ImageLayout.Stretch;
+            SoundButton.FlatStyle = FlatStyle.Flat;
+            SoundButton.Location = new Point(12, 681);
+            SoundButton.Name = "SoundButton";
+            SoundButton.Size = new Size(81, 81);
+            SoundButton.TabIndex = 6;
+            SoundButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+            SoundButton.UseVisualStyleBackColor = false;
+            SoundButton.Click += SoundButton_Click;
+            // 
             // EnterWindow
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1255, 970);
+            ClientSize = new Size(1004, 776);
+            Controls.Add(SoundButton);
             Controls.Add(Exit);
             Controls.Add(pictureBox1);
             Controls.Add(Profile);
             Controls.Add(Start);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "EnterWindow";
             Text = "EnterWindow";
             Load += EnterWindow_Load;
@@ -124,5 +135,6 @@
         private PictureBox pictureBox1;
         public Button Start;
         private Button Exit;
+        private Button SoundButton;
     }
 }

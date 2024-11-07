@@ -15,15 +15,23 @@ namespace Carpathian_star
     {
         public Form1 parentform;
         AccForm childAccForm;
+        private bool isMusicPlaying = true;
         public EnterWindow(Form1 parent)
         {
             InitializeComponent();
             Program.ApplyCustomFont(this.Controls);
+
             childAccForm = new AccForm(this);
             childAccForm.FormClosed += (s, args) => this.Show();
             parentform = parent;
             Exit.FlatAppearance.BorderSize = 0;
             Profile.FlatAppearance.BorderSize = 0;
+            SoundButton.FlatAppearance.BorderSize = 0;
+
+            SoundButton.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            SoundButton.FlatAppearance.MouseOverBackColor = Color.Transparent;
+
+
             Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
             Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
 
@@ -69,9 +77,27 @@ namespace Carpathian_star
             {
                 e.Handled = true;
             }
-            else if (e.KeyCode == Keys.Escape) { 
+            else if (e.KeyCode == Keys.Escape)
+            {
                 Exit_Click(sender, e);
             }
+        }
+
+        private void SoundButton_Click(object sender, EventArgs e)
+        {
+            if (isMusicPlaying)
+            {
+                // Якщо музика грає, зупиняємо її
+                Program.player.Stop();
+            }
+            else
+            {
+                // Якщо музика не грає, відновлюємо її
+                Program.player.PlayLooping();
+            }
+
+            // Змінюємо стан
+            isMusicPlaying = !isMusicPlaying;
         }
     }
 }
