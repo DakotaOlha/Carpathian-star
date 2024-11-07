@@ -7,6 +7,7 @@ namespace Carpathian_star
     internal static class Program
     {
         private static PrivateFontCollection _privateFontCollection;
+        public static SoundPlayer player = new SoundPlayer(Properties.Resources._2);
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -17,7 +18,6 @@ namespace Carpathian_star
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             LoadCustomFont(); // Завантаження шрифту
-            SoundPlayer player = new SoundPlayer(Properties.Resources._2);
             player.PlayLooping();
             Application.Run(new Form1());
         }
