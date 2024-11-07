@@ -71,7 +71,7 @@
             // 
             // back_button
             // 
-            back_button.BackColor = Color.Transparent;
+            back_button.BackColor = Color.White;
             back_button.BackgroundImage = (Image)resources.GetObject("back_button.BackgroundImage");
             back_button.BackgroundImageLayout = ImageLayout.Stretch;
             back_button.FlatStyle = FlatStyle.Flat;
