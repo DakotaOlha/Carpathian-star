@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -40,24 +41,20 @@ namespace Carpathian_star
             {
                 baseForm.form1.Balance -= Convert.ToInt64(label.Text);
                 BalanceLabel.Text = baseForm.form1.Balance.ToString();
-                string filePath = System.IO.Path.Combine(Environment.CurrentDirectory, "Dani.dot");
+                string filePath = Path.Combine(Environment.CurrentDirectory, "Dani.json");
                 try
                 {
-                    var lines = File.ReadAllLines(filePath).ToList();
+                    var jsonData = File.ReadAllText(filePath);
+                    var users = JsonSerializer.Deserialize<List<UserData>>(jsonData) ?? new List<UserData>();
 
-                    for (int i = 0; i < lines.Count; i++)
+                    var user = users.FirstOrDefault(u => u.Login == baseForm.form1.login);
+                    if (user != null)
                     {
-                        var parts = lines[i].Split(new[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)
-                                            .Select(part => part.Replace(",", ""))
-                                            .ToArray();
-                        if (parts.Length >= 3 && parts[0] == baseForm.form1.login)
-                        {
-                            parts[2] = baseForm.form1.Balance.ToString();
-                            lines[i] = string.Join(" ", parts);
-                            break;
-                        }
+                        user.Balance = baseForm.form1.Balance;
                     }
-                    File.WriteAllLines(filePath, lines);
+
+                    var updatedJson = JsonSerializer.Serialize(users, new JsonSerializerOptions { WriteIndented = true });
+                    File.WriteAllText(filePath, updatedJson);
                 }
                 catch (Exception ex)
                 {

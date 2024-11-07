@@ -18,9 +18,6 @@ namespace Carpathian_star
             childForm.FormClosed += (s, args) => this.Show();
             this.Text = "";
             this.ShowIcon = false;
-            var screen = Screen.FromControl(this);
-            this.Top = screen.Bounds.Height / 2 - this.Height / 2;
-            this.Left = screen.Bounds.Width / 2 - this.Width / 2;
             Exit.FlatAppearance.BorderSize = 0;
             Exit.FlatAppearance.MouseDownBackColor = Color.Transparent;
             Exit.FlatAppearance.MouseOverBackColor = Color.Transparent;
