@@ -40,7 +40,7 @@ namespace Carpathian_star
                 string login = Login_textBox.Text,
                     password = Password_textBox.Text,
                     filePath = System.IO.Path.Combine(Environment.CurrentDirectory, "Dani.json"),
-                    line = $"{login}, {password}, 500";
+                    line = $"{login}, {password}, 15000";
                 if (password.Length < 4)
                 {
                     MessageBox.Show("Пароль повинен мати не менше 4 знаків.");
@@ -81,7 +81,7 @@ namespace Carpathian_star
                     {
                         Login = login,
                         Password = password,
-                        Balance = 500
+                        Balance = 15000
                     };
                     users.Add(newUser);
 
@@ -90,7 +90,7 @@ namespace Carpathian_star
 
                     enterWindow.parentform.login = login;
                     enterWindow.parentform.password = password;
-                    enterWindow.parentform.Balance = 500;
+                    enterWindow.parentform.Balance = 15000;
                     MessageBox.Show("Ви зареєструвалися успішно.");
                     Login_textBox.Clear();
                     Password_textBox.Clear();

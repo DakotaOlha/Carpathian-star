@@ -26,6 +26,7 @@ namespace Carpathian_star
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
             if (count == 0)
             {
                 ++count;
@@ -122,10 +123,10 @@ namespace Carpathian_star
         }
 
         private void Store4_Click(object sender, EventArgs e)
-        {            
+        {
             StoreInfo storeInfo = new StoreInfo(this, 1);
             storeInfo.SetLabelText("Михайло Паланок, відомий своєю привітністю і майстерністю у виготовленні наливок. " +
-                           "Він знає кожного постійного клієнта на ім'я і завжди готовий підняти настрій веселою історією.", 
+                           "Він знає кожного постійного клієнта на ім'я і завжди готовий підняти настрій веселою історією.",
                            "Натуральні наливки з місцевих фруктів та ягід. Від класичних сливових і вишневих, " +
                             "до екзотичних закарпатських міксів.",
                             "Магазин працює з понеділка по суботу, з 10:00 до 18:00. Неділя — святковий день, " +
@@ -203,6 +204,23 @@ namespace Carpathian_star
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                Exit_Click(sender, e);
+            }
+        }
+
+        private void Store7_Click(object sender, EventArgs e)
+        {
+            StoreInfo storeInfo = new StoreInfo(this, 0);
+            storeInfo.label1.Text = "Магазин наразі закрито";
+
+            storeInfo.FormClosed += (s, args) => this.Show();
+            storeInfo.ShowDialog();
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
