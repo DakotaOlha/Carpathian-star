@@ -25,6 +25,7 @@ namespace Carpathian_star
             this.FormClosed += (s, args) => baseForm.form1.Show();
             this.ShowIcon = false;
             this.CenterToScreen();
+            BalanceLabel.AutoSize = false;
         }
 
         private void back_button_Click(object sender, EventArgs e)
