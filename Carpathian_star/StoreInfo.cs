@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Carpathian_star
 {
@@ -19,8 +21,16 @@ namespace Carpathian_star
             InitializeComponent();
             Program.ApplyCustomFont(this.Controls);
             form1 = form;
-            numForm = i;
+             numForm = i;
             this.CenterToScreen();
+        }
+
+        public void SetLabelText(string text, string text1, string text2, string text3)
+        {
+            OwnerLabel.Text = text; 
+            ProductLabel.Text = text1;
+            WorkHoursLabel.Text = text2;
+            ReputationLabel.Text = text3;
         }
 
         private void Next_button_Click(object sender, EventArgs e)
@@ -95,9 +105,35 @@ namespace Carpathian_star
             form1.Show();
         }
 
+        private void LabelVisible(bool t)
+        {
+            Owner.Visible = t;
+            Product.Visible = t;
+            WokHours.Visible = t;
+            Reputaion.Visible = t;
+            Next_button.Visible = t;
+            label2.Visible = t;
+            label3.Visible = t;
+            label4.Visible = t;
+            label5.Visible = t;
+        }
+
         private void StoreInfo_Load(object sender, EventArgs e)
         {
-
+            if (numForm == 0)
+            {
+                LabelVisible(false);
+                label1.Text = "Магазин наразі закрито";
+                label1.Location = new Point(109, 264);
+                label1.ForeColor = Color.Red;
+            }
+            else
+            {
+                LabelVisible(true);
+                label1.Text = "Інформація про магазин:";
+                label1.Location = new Point(75,15);
+                label1.ForeColor = Color.Black;
+            }
         }
     }
 }

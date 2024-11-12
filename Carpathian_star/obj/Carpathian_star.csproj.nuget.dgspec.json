@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Professional\\Source\\Repos\\Carpathian_star\\Carpathian_star.csproj": {}
+    "C:\\Users\\Professional\\source\\repos\\Carpathian-star\\Carpathian_star\\Carpathian_star.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Professional\\Source\\Repos\\Carpathian_star\\Carpathian_star.csproj": {
+    "C:\\Users\\Professional\\source\\repos\\Carpathian-star\\Carpathian_star\\Carpathian_star.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Professional\\Source\\Repos\\Carpathian_star\\Carpathian_star.csproj",
+        "projectUniqueName": "C:\\Users\\Professional\\source\\repos\\Carpathian-star\\Carpathian_star\\Carpathian_star.csproj",
         "projectName": "Carpathian_star",
-        "projectPath": "C:\\Users\\Professional\\Source\\Repos\\Carpathian_star\\Carpathian_star.csproj",
+        "projectPath": "C:\\Users\\Professional\\source\\repos\\Carpathian-star\\Carpathian_star\\Carpathian_star.csproj",
         "packagesPath": "C:\\Users\\Professional\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Professional\\Source\\Repos\\Carpathian_star\\obj\\",
+        "outputPath": "C:\\Users\\Professional\\source\\repos\\Carpathian-star\\Carpathian_star\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

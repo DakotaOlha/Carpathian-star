@@ -128,6 +128,7 @@
             Store7.Size = new Size(25, 22);
             Store7.TabIndex = 6;
             Store7.UseVisualStyleBackColor = false;
+            Store7.Click += Store7_Click;
             Store7.MouseEnter += Store7_MouseEnter;
             Store7.MouseLeave += Store7_MouseLeave;
             // 
@@ -182,6 +183,7 @@
             Text = "Form1";
             Load += Form1_Load;
             KeyDown += Form1_KeyDown;
+            KeyUp += Form1_KeyUp;
             ResumeLayout(false);
         }
 

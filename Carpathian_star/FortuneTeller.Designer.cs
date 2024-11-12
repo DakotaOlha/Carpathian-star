@@ -46,12 +46,12 @@
             BalanceLabel.Font = new Font("Pixeled", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             BalanceLabel.ForeColor = Color.LightYellow;
             BalanceLabel.Image = (Image)resources.GetObject("BalanceLabel.Image");
-            BalanceLabel.Location = new Point(744, 24);
+            BalanceLabel.Location = new Point(744, 20);
             BalanceLabel.Margin = new Padding(4, 0, 4, 0);
             BalanceLabel.Name = "BalanceLabel";
             BalanceLabel.Size = new Size(164, 45);
             BalanceLabel.TabIndex = 49;
-            BalanceLabel.Text = "_________";
+            BalanceLabel.Text = "999999999";
             BalanceLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
